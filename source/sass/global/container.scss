@@ -1,4 +1,9 @@
 .container {
-  width: 1200px;
+  width: calc(100% - 90px);
+  max-width: 1200px;
   margin: 0 auto;
+
+  @include vp-767 {
+    width: calc(100% - 30px);
+  }
 }

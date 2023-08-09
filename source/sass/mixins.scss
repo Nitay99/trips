@@ -13,7 +13,7 @@
 }
 
 @mixin focus {
-  &.focus-visible:focus {
+  &.focus-visible:focus:not(:active) {
     @content;
   }
 }
