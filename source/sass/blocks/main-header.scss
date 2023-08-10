@@ -50,3 +50,20 @@
     color: $color-default-dark;
   }
 }
+
+.main-header__nav {
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+}
+
+.main-header__logo {
+  @include vp-1199 {
+    margin-left: 100px;
+  }
+}
+
+.main-header__content {
+  position: relative;
+  z-index: 1;
+}

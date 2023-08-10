@@ -1,0 +1,35 @@
+.privacy-policy {
+  max-width: 220px;
+
+  color: $color-default-dark;
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: 300;
+  border-bottom: 1px solid transparent;
+
+  @include hover {
+    &:not(.privacy-policy--disabled) {
+      border-bottom: 1px solid;
+    }
+  }
+
+  @include focus {
+    &:not(.privacy-policy--disabled) {
+      outline: 1px solid;
+      border-bottom: 0;
+    }
+  }
+
+  @include active {
+    &:not(.privacy-policy--disabled) {
+      outline: none;
+      border-bottom: 0;
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+    opacity: 0.5;
+    outline: none;
+  }
+}

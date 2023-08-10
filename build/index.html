@@ -23,32 +23,32 @@
           <img src="img/jpg/caucasus-mountains.jpg" alt="Горы Кавказа.">
         </div>
         <div class="main-header__row">
-          <nav class="main-nav main-nav--closed main-nav--nojs">
+          <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"></button>
-            <a href="index.html" class="main-nav__logo logo">
+            <a href="index.html" class="main-header__logo logo">
               <svg width="205" height="62" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
                 <use xlink:href="img/sprite.svg#site-logo"></use>
               </svg>
               <span class="visually-hidden">Логотип сайта с подписью: Lifetour, организация походов в горы.</span>
             </a>
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--dropdown-menu">
               <li class="site-list__item">
-                <a href="#" class="site-list__link">Туры</a>
+                <a href="#" class="site-list__link site-list__link--dropdown-menu">Туры</a>
               </li>
               <li class="site-list__item">
-                <a href="#" class="site-list__link">Обучение</a>
+                <a href="#" class="site-list__link site-list__link--dropdown-menu">Обучение</a>
               </li>
               <li class="site-list__item">
-                <a href="#" class="site-list__link">О нас</a>
+                <a href="#" class="site-list__link site-list__link--dropdown-menu">О нас</a>
               </li>
               <li class="site-list__item">
-                <a href="#" class="site-list__link">Отзывы</a>
+                <a href="#" class="site-list__link site-list__link--dropdown-menu">Отзывы</a>
               </li>
               <li class="site-list__item">
-                <a href="#" class="site-list__link">Фотографии</a>
+                <a href="#" class="site-list__link site-list__link--dropdown-menu">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a href="#" class="site-list__link">Контакты</a>
+                <a href="#" class="site-list__link site-list__link--dropdown-menu">Контакты</a>
               </li>
             </ul>
             <a href="tel:88007253232" class="main-nav__phone contact-phone">8 800 725 32 32</a>
@@ -75,7 +75,67 @@
         <section class="contacts"></section>
       </main>
       <footer class="main-footer">
-        <div class="container"></div>
+        <div class="main-footer__container">
+          <nav class="main-footer__nav main-nav main-nav--footer">
+            <a href="index.html" class="main-nav__logo logo logo--footer">
+              <svg width="205" height="62" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                <use xlink:href="img/sprite.svg#site-logo"></use>
+              </svg>
+              <span class="visually-hidden">Логотип сайта с подписью: Lifetour, организация походов в горы.</span>
+            </a>
+            <div class="main-footer__list-wrap">
+              <ul class="main-nav__list main-footer__list site-list site-list--footer">
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Туры</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Обучение</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">О нас</a>
+                </li>
+                </li>
+              </ul>
+              <ul class="main-nav__list main-footer__list site-list site-list--footer">
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Отзывы</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <a href="tel:88007253232" class="main-nav__phone main-nav__phone--tablet-hidden contact-phone">8 800 725 32 32</a>
+          </nav>
+          <ul class="main-footer__social social-list">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link" aria-label="Вконтакте.">
+                <svg width="14" height="8" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link" aria-label="Одноклассники.">
+                <svg width="9" height="16" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                  <use xlink:href="img/sprite.svg#odnoklassniki-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link" aria-label="Реддит.">
+                <svg width="14" height="15" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                  <use xlink:href="img/sprite.svg#reddit-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="main-footer__privacy privacy-policy">Политика конфиденциальности</a>
+        </div>
       </footer>
     </div>
 

@@ -1,5 +1,6 @@
-const navMain = document.querySelector('.main-nav');
-const navToggle = document.querySelector('.main-nav__toggle');
+const header = document.querySelector('.main-header');
+const navMain = header.querySelector('.main-nav');
+const navToggle = header.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
