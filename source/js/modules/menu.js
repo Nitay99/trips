@@ -16,4 +16,11 @@ const setMenuClickHandler = () => {
   });
 };
 
+// window.addEventListener('resize', () => {
+//   if (window.innerWidth > 1199) {
+//     navMain.classList.add('main-nav--closed');
+//     navMain.classList.remove('main-nav--opened');
+//   }
+// });
+
 export {setMenuClickHandler};

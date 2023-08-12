@@ -1,0 +1,16 @@
+.slide-cards {
+  bottom: -83px;
+}
+
+.slide-cards img {
+  position: relative;
+}
+
+.slide-cards img:first-child {
+  right: -175px;
+}
+
+.slide-cards img:nth-child(2) {
+  height: 366px;
+  top: 93px;
+}

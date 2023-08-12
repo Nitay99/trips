@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {setMenuClickHandler} from './modules/menu';
+import './modules/header';
+import {initHeaderSlider} from './modules/sliders/header-slider';
 
 // ---------------------------------
 
@@ -16,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   setMenuClickHandler();
+  initHeaderSlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
