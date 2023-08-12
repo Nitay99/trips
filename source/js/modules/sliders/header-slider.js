@@ -14,6 +14,8 @@ const initHeaderSlider = () => {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+    allowTouchMove: false,
   });
 };
 

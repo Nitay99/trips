@@ -1648,18 +1648,6 @@ button,
   right: 0;
   bottom: -92px;
 }
-.hero__card--two {
-  bottom: -83px;
-}
-.hero__card--two img {
-  position: relative;
-}
-.hero__card--two img:first-child {
-  right: -175px;
-}
-.hero__card--two img:nth-child(2) {
-  top: 50px;
-}
 
 .hero__row {
   position: relative;
