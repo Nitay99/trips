@@ -47,6 +47,14 @@
   position: absolute;
   right: 0;
   bottom: -92px;
+
+  &--two {
+    bottom: -83px;
+  }
+
+  &--three {
+    bottom: 5px;
+  }
 }
 
 .hero__row {
@@ -70,4 +78,26 @@
 
 .hero__info svg {
   margin-right: 9px;
+}
+
+.hero__slider .swiper-pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  width: auto;
+  right: 116px;
+  bottom: 98px;
+}
+
+.hero__slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+
+  opacity: 1;
+  background-color: $color-transparent;
+  border: 1px solid $color-default-white;
+}
+
+.hero__slider .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }

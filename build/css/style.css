@@ -1426,8 +1426,11 @@ button,
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
   z-index: 3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .main-header__bg::before {
   content: "";
@@ -1648,6 +1651,12 @@ button,
   right: 0;
   bottom: -92px;
 }
+.hero__card--two {
+  bottom: -83px;
+}
+.hero__card--three {
+  bottom: 5px;
+}
 
 .hero__row {
   position: relative;
@@ -1675,6 +1684,31 @@ button,
 
 .hero__info svg {
   margin-right: 9px;
+}
+
+.hero__slider .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 7px;
+  width: auto;
+  right: 116px;
+  bottom: 98px;
+}
+
+.hero__slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+}
+
+.hero__slider .swiper-pagination-bullet-active {
+  background-color: #ffffff;
 }
 
 .main-nav {
@@ -2059,24 +2093,43 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #ffffff;
   background-color: #0266c1;
-  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0266c1;
   cursor: pointer;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 @media (hover: hover) {
-  .btn:hover:not(:active) {
-    opacity: 0.8;
+  .btn:hover:not(:active):not(.btn--disabled) {
+    border-color: #1c3374;
+    background-color: rgba(255, 255, 255, 0);
+    color: #1c3374;
   }
 }
-.btn:focus {
-  opacity: 0.8;
+.btn:focus:not(.btn--disabled) {
+  border-color: #1c3374;
+  background-color: rgba(255, 255, 255, 0);
+  color: #1c3374;
+}
+.btn:active:not(.btn--disabled) {
+  border-color: #1c3374;
+  background-color: #1c3374;
+  color: #ffffff;
+}
+.btn--disabled {
+  color: #ffffff;
+  background-color: #0266c1;
+  opacity: 0.1;
+  cursor: default;
 }
 
 .contact-phone {
@@ -2135,10 +2188,83 @@ button,
 .video {
   width: 482px;
   height: 317px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.video__play-button {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55px;
+  height: 55px;
+  top: calc(50% - 27px);
+  left: calc(50% - 27px);
+  cursor: pointer;
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+@media (hover: hover) {
+  .video__play-button:hover:not(:active):not(:disabled) {
+    background: rgba(255, 255, 255, 0);
+    border-color: #1c3374;
+  }
+  .video__play-button:hover:not(:active):not(:disabled) svg:last-child {
+    display: block;
+  }
+}
+.video__play-button:focus:not(:disabled) {
+  background: rgba(255, 255, 255, 0);
+  border-color: #1c3374;
+}
+.video__play-button:focus:not(:disabled) svg:last-child {
+  display: block;
+}
+.video__play-button:active:not(:disabled) {
+  background: #1c3374;
+  border-color: #1c3374;
+}
+.video__play-button:disabled {
+  background: rgba(255, 255, 255, 0);
+  border-color: #0266c1;
+  color: #0266c1;
+  opacity: 0.1;
+  cursor: default;
+}
+
+.video__play-button svg {
+  position: relative;
+  z-index: 2;
+  margin-left: 5px;
+}
+
+.video__play-button svg:last-child {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  color: #000000;
+  top: 13.7px;
+  left: 15.4px;
 }
 
 .slide-cards {
-  bottom: -83px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .slide-cards img {
@@ -2152,6 +2278,110 @@ button,
 .slide-cards img:nth-child(2) {
   height: 366px;
   top: 93px;
+}
+
+.audio-frame {
+  width: 340px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 39px;
+  background-color: rgba(245, 247, 251, 0.9);
+  border: 2px solid #ffffff;
+}
+
+.audio-frame__title {
+  color: #1c3374;
+  font-size: 22px;
+  line-height: 1em;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.audio-frame__subtitle {
+  color: rgba(28, 51, 116, 0.5);
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 49px;
+}
+
+.audio-frame__buttons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.audio-frame__play-button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 47px;
+  height: 47px;
+  cursor: pointer;
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+@media (hover: hover) {
+  .audio-frame__play-button:hover:not(:active):not(:disabled) {
+    background: rgba(255, 255, 255, 0);
+    border-color: #1c3374;
+  }
+  .audio-frame__play-button:hover:not(:active):not(:disabled) svg:last-child {
+    display: block;
+  }
+}
+.audio-frame__play-button:focus:not(:disabled) {
+  background: rgba(255, 255, 255, 0);
+  border-color: #1c3374;
+}
+.audio-frame__play-button:focus:not(:disabled) svg:last-child {
+  display: block;
+}
+.audio-frame__play-button:active:not(:disabled) {
+  background: #1c3374;
+  border-color: #1c3374;
+}
+.audio-frame__play-button:disabled {
+  background: rgba(255, 255, 255, 0);
+  border-color: #0266c1;
+  color: #0266c1;
+  opacity: 0.1;
+  cursor: default;
+}
+
+.audio-frame__play-button svg {
+  position: relative;
+  z-index: 2;
+  margin-left: 5px;
+}
+
+.audio-frame__play-button svg:last-child {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  color: #000000;
+  top: 9.6px;
+  left: 12.2px;
 }
 
 /* @mixin hover-focus {

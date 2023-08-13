@@ -1,18 +1,44 @@
-.video {
-  width: 482px;
-  height: 317px;
-  user-select: none;
+.audio-frame {
+  width: 340px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 39px;
+
+  background-color: transparentize($color-alice-blue, 0.1);
+  border: 2px solid $color-default-white;
 }
 
-.video__play-button {
-  position: absolute;
+.audio-frame__title {
+  color: $color-resolution-blue;
+  font-size: 22px;
+  line-height: 1em;
+  font-weight: 400;
+
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.audio-frame__subtitle {
+  color: transparentize($color-resolution-blue, 0.5);
+  font-size: 14px;
+  line-height: 17px;
+
+  margin-bottom: 49px;
+}
+
+.audio-frame__buttons-row {
+  display: flex;
+  justify-content: center;
+}
+
+.audio-frame__play-button {
+  position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
-  height: 55px;
-  top: calc(50% - 27px);
-  left: calc(50% - 27px);
+  width: 47px;
+  height: 47px;
 
   cursor: pointer;
   color: $color-default-white;
@@ -49,17 +75,17 @@
   }
 }
 
-.video__play-button svg {
+.audio-frame__play-button svg {
   position: relative;
   z-index: 2;
   margin-left: 5px;
 }
 
-.video__play-button svg:last-child {
+.audio-frame__play-button svg:last-child {
   position: absolute;
   display: none;
   z-index: 1;
   color: $color-black;
-  top: 13.7px;
-  left: 15.4px;
+  top: 9.6px;
+  left: 12.2px;
 }

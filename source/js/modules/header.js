@@ -1,4 +1,11 @@
-const headerBg = document.querySelector('.main-header__bg');
-const headerRowHeight = document.querySelector('.main-header__row').clientHeight;
+const headerBackgrounds = document.querySelectorAll('.main-header__bg');
+const headerHeight = document.querySelector('.main-header').clientHeight;
+const headerWidth = document.querySelector('.main-header').offsetWidth;
 
-headerBg.style.height = `calc(100% + ${headerRowHeight}px)`;
+if (headerBackgrounds.length >= 1) {
+  headerBackgrounds.forEach((headerBg) => {
+    headerBg.style.height = `${headerHeight}px`;
+    headerBg.style.width = `${headerWidth}px`;
+  });
+}
+

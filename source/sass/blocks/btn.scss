@@ -1,14 +1,15 @@
 .btn {
   display: inline-flex;
   justify-content: center;
+  user-select: none;
 
   color: $color-default-white;
 
   background-color: $color-additional;
-  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-additional;
   cursor: pointer;
-
-  transition: opacity $trans-default;
 
   &:disabled {
     opacity: 0.5;
@@ -17,6 +18,25 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    &:not(.btn--disabled) {
+      border-color: $color-resolution-blue;
+      background-color: $color-transparent;
+      color: $color-resolution-blue;
+    }
+  }
+
+  @include active {
+    &:not(.btn--disabled) {
+      border-color: $color-resolution-blue;
+      background-color: $color-resolution-blue;
+      color: $color-default-white;
+    }
+  }
+
+  &--disabled {
+    color: $color-default-white;
+    background-color: $color-additional;
+    opacity: 0.1;
+    cursor: default;
   }
 }
