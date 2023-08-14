@@ -1426,6 +1426,7 @@ button,
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
   z-index: 3;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1463,6 +1464,9 @@ button,
   color: #ffffff;
 }
 @media (max-width: 1199px) {
+  .main-header__row {
+    padding-top: 0;
+  }
   .main-header__row:has(.main-nav--opened) {
     background-color: #ffffff;
     color: #2d383f;
@@ -1481,14 +1485,9 @@ button,
 @media (max-width: 1199px) {
   .main-header__logo {
     margin-top: 0;
-    margin-right: 30%;
+    margin-right: auto;
     margin-bottom: 0;
-    margin-left: auto;
-  }
-}
-@media (width: 768px) {
-  .main-header__logo {
-    margin-right: 142px;
+    margin-left: 35.5%;
   }
 }
 @media (max-width: 767px) {
@@ -1611,11 +1610,30 @@ button,
   padding-top: 80px;
   padding-bottom: 79.5px;
 }
+@media (max-width: 1199px) {
+  .hero__slide {
+    padding-top: 99px;
+  }
+}
 
 .hero__content {
   position: relative;
   z-index: 3;
   margin-bottom: 149px;
+}
+@media (max-width: 1199px) {
+  .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .hero__content h1 {
@@ -1628,6 +1646,13 @@ button,
   line-height: 1em;
   font-weight: 800;
 }
+@media (max-width: 1199px) {
+  .hero__content h1 {
+    margin-bottom: 13px;
+    font-size: 56px;
+    text-align: center;
+  }
+}
 
 .hero__content p {
   width: 460px;
@@ -1636,11 +1661,24 @@ button,
   font-size: 17px;
   line-height: 24px;
 }
+@media (max-width: 1199px) {
+  .hero__content p {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+}
 
 .hero__content a {
   padding: 17px 15px;
   min-width: 220px;
   max-width: 250px;
+}
+@media (max-width: 1199px) {
+  .hero__content a {
+    min-width: auto;
+    max-width: 100%;
+    width: 30.5%;
+  }
 }
 
 .hero__card {
@@ -1656,6 +1694,12 @@ button,
 }
 .hero__card--three {
   bottom: 5px;
+}
+@media (max-width: 1199px) {
+  .hero__card {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .hero__row {
