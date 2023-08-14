@@ -2,6 +2,21 @@
   width: 482px;
   height: 317px;
   user-select: none;
+
+  @include vp-1199 {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    height: auto;
+  }
+
+  @include only-768 {
+    height: 300px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .video__play-button {

@@ -11,6 +11,8 @@
   border-color: $color-additional;
   cursor: pointer;
 
+  transition: background-color $trans-default;
+
   &:disabled {
     opacity: 0.5;
 

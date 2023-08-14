@@ -89,6 +89,10 @@
   }
 }
 
+.main-nav__list {
+  z-index: 2;
+}
+
 .main-nav--closed .main-nav__list {
   @include vp-1199 {
     display: none;
@@ -136,6 +140,7 @@
 
   @include vp-767 {
     position: absolute;
+    z-index: 3;
     right: 15px;
     top: 57px;
     margin-top: 0;

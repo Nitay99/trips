@@ -1,5 +1,8 @@
 .hero__slider {
-  overflow: visible;
+  overflow-y: visible;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
 
   color: $color-default-white;
 }
@@ -7,21 +10,30 @@
 .hero__slide {
   padding-top: 80px;
   padding-bottom: 79.5px;
+  position: relative;
+  z-index: 1;
 
   @include vp-1199 {
     padding-top: 99px;
+    padding-bottom: 167.5px;
+  }
+
+  @include vp-767 {
+    padding-top: 90px;
+    padding-bottom: 103.5px;
   }
 }
 
 .hero__content {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   margin-bottom: 149px;
 
   @include vp-1199 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
   }
 }
 
@@ -42,6 +54,12 @@
     font-size: 56px;
     text-align: center;
   }
+
+  @include vp-767 {
+    margin-bottom: 13px;
+
+    font-size: 30px;
+  }
 }
 
 .hero__content p {
@@ -53,13 +71,25 @@
   line-height: 24px;
 
   @include vp-1199 {
+    width: 69%;
     text-align: center;
     margin-bottom: 27px;
+  }
+
+  @include vp-767 {
+    width: 98%;
+    margin-bottom: 21px;
+
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 
 .hero__content a {
-  padding: 17px 15px;
+  padding-top: 17px;
+  padding-right: 15px;
+  padding-bottom: 17px;
+  padding-left: 15px;
   min-width: 220px;
   max-width: 250px;
 
@@ -67,6 +97,13 @@
     min-width: auto;
     max-width: 100%;
     width: 30.5%;
+    margin-bottom: 48px;
+  }
+
+  @include vp-767 {
+    width: 62%;
+    padding-top: 14px;
+    padding-bottom: 13px;
   }
 }
 
@@ -87,6 +124,14 @@
   @include vp-1199 {
     position: relative;
     bottom: 0;
+
+    &--three {
+      bottom: -19px;
+    }
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -94,12 +139,16 @@
   position: relative;
   z-index: 3;
   display: flex;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .hero__info {
   display: inline-flex;
   align-items: center;
-  padding: 14px 20px;
+  padding: 13px 20px;
   margin-right: 10px;
   max-width: 200px;
 
@@ -118,8 +167,19 @@
   justify-content: flex-end;
   gap: 7px;
   width: auto;
-  right: 116px;
-  bottom: 98px;
+  right: -4px;
+  bottom: 97px;
+
+  @include vp-1199 {
+    right: 0;
+    bottom: 90px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    bottom: 40px;
+    gap: 4px;
+  }
 }
 
 .hero__slider .swiper-pagination-bullet {
@@ -129,6 +189,11 @@
   opacity: 1;
   background-color: $color-transparent;
   border: 1px solid $color-default-white;
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .hero__slider .swiper-pagination-bullet-active {
