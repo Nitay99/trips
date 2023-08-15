@@ -15,17 +15,20 @@ const initHeaderSlider = () => {
       clickable: true,
     },
 
-    allowTouchMove: false,
+    speed: 300,
 
     breakpoints: {
       // when window width is >= 320px
       320: {
         spaceBetween: 30,
-        allowTouchMove: true,
       },
       768: {
         spaceBetween: 30,
         allowTouchMove: true,
+      },
+      1200: {
+        spaceBetween: 30,
+        allowTouchMove: false,
       },
     },
   });

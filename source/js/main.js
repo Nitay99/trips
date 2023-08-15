@@ -2,10 +2,11 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {setMenuClickHandler} from './modules/menu';
-import './modules/header';
 import {setPlayVideoClickHandler} from './modules/video';
 import {setPlayAudioClickHandler} from './modules/audio-frame';
+import './modules/section-title';
 import {initHeaderSlider} from './modules/sliders/header-slider';
+import {initTourSlider} from './modules/sliders/tours-slider';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   setMenuClickHandler();
   initHeaderSlider();
+  initTourSlider();
   setPlayVideoClickHandler();
   setPlayAudioClickHandler();
 

@@ -3,6 +3,8 @@
   height: 220px;
   display: flex;
 
+  user-select: none;
+
   @include vp-767 {
     display: none;
   }

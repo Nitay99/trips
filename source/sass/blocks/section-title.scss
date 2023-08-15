@@ -1,0 +1,21 @@
+.section-title {
+  font-size: 35px;
+  line-height: 1em;
+  font-weight: 800;
+
+  margin-top: 0;
+  position: relative;
+
+  &::before {
+    content: attr(data-value);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    opacity: 0.05;
+    font-size: 55px;
+    line-height: 1em;
+    color: inherit;
+  }
+}
