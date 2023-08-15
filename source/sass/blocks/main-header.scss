@@ -4,19 +4,19 @@
   background-color: $color-additional;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../img/jpg/caucasus-mountains-tablet.jpg");
+  background-image: url("../img/jpg/caucasus-mountains-tablet.jpg");
 
   &:has(.hero__slide--caucasus.swiper-slide-active) {
-    background-image: url("../../img/jpg/caucasus-mountains.jpg");
+    background-image: url("../img/jpg/caucasus-mountains.jpg");
 
     @include vp-1199 {
-      background-image: url("../../img/jpg/caucasus-mountains-tablet.jpg");
+      background-image: url("../img/jpg/caucasus-mountains-tablet.jpg");
       background-position: 50% 0;
     }
   }
 
   &:has(.hero__slide--kamchatka.swiper-slide-active) {
-    background-image: url("../../img/jpg/kamchatka-mountains.jpg");
+    background-image: url("../img/jpg/kamchatka-mountains.jpg");
 
     @include vp-1199 {
       background-position: 50% 0;
@@ -24,10 +24,10 @@
   }
 
   &:has(.hero__slide--altai.swiper-slide-active) {
-    background-image: url("../../img/jpg/altai.jpg");
+    background-image: url("../img/jpg/altai.jpg");
 
     @include vp-1199 {
-      background-image: url("../../img/jpg/altai-tablet.jpg");
+      background-image: url("../img/jpg/altai-tablet.jpg");
     }
   }
 
