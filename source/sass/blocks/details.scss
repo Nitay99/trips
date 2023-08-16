@@ -1,11 +1,10 @@
 .details {
   display: flex;
-  gap: 53px;
+  justify-content: space-between;
   margin-top: 0;
 }
 
 .details__item {
-  max-width: 110px;
 }
 
 .details__name {
@@ -23,6 +22,17 @@
   margin-left: 0;
 }
 
+.details__value svg {
+  @include vp-767 {
+    width: 12px;
+    height: 11px;
+  }
+}
+
 .details__value svg:not(:last-child) {
   margin-right: -2.7px;
+
+  @include vp-767 {
+    margin-right: -0.5px;
+  }
 }

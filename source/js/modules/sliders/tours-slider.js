@@ -20,11 +20,11 @@ const initTourSlider = () => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 5,
+        spaceBetween: 18,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 18,
         allowTouchMove: true,
       },
       1200: {

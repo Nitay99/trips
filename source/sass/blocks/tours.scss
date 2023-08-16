@@ -1,6 +1,14 @@
 .tours {
   padding-top: 124px;
   position: relative;
+
+  @include vp-1199 {
+    padding-top: 88px;
+  }
+
+  @include vp-767 {
+    padding-top: 67px;
+  }
 }
 
 .tours__container {
@@ -9,10 +17,27 @@
 
 .tours h2 {
   margin-bottom: 54px;
+
+  @include vp-1199 {
+    margin-bottom: 43px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 27.5px;
+  }
 }
 
 .tours__slider {
-  margin-bottom: 52px;
+  margin-bottom: 51px;
+
+  @include vp-1199 {
+    width: 98%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 28px;
+  }
 }
 
 .tours__slider-buttons-wrap {
@@ -21,6 +46,14 @@
   right: 0;
   display: flex;
   gap: 4px;
+
+  @include vp-1199 {
+    top: 17px;
+  }
+
+  @include vp-767 {
+    top: 24px;
+  }
 }
 
 .tours__slider-button-prev,
@@ -95,6 +128,12 @@
     cursor: default;
     color: $color-additional;
     opacity: 0.1;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+
+    padding-right: 18px;
   }
 }
 

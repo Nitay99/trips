@@ -17,5 +17,25 @@
     font-size: 55px;
     line-height: 1em;
     color: inherit;
+
+    @include vp-1199 {
+      font-size: 40px;
+    }
+
+    @include vp-767 {
+      bottom: 21px;
+
+      font-size: 26px;
+      min-width: 256px;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+  }
+
+  @include vp-767 {
+    width: 70%;
+    font-size: 22px;
   }
 }
