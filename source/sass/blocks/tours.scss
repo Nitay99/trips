@@ -14,6 +14,33 @@
   }
 }
 
+.tours__clouds-and-mountains-bg {
+  position: absolute;
+  top: -18px;
+  right: 0;
+
+  @include vp-1199 {
+    top: -96px;
+    right: -308px;
+  }
+}
+
+.tours__clouds-bg {
+  position: absolute;
+  width: 837px;
+  bottom: -99px;
+  left: -231px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.tours__clouds-bg img {
+  object-fit: contain;
+  height: 361px;
+}
+
 .tours__container {
   position: relative;
 }

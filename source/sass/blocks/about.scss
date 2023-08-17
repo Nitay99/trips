@@ -14,6 +14,16 @@
   }
 }
 
+.about__clouds-bg {
+  position: absolute;
+  top: -140px;
+  right: -145px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
 .about__img-wrap {
   @include vp-1199 {
     display: flex;
@@ -23,7 +33,7 @@
     top: 21px;
     left: -206px;
     width: 88%;
-    max-width: 812px;
+    max-width: 740px;
   }
 
   @include vp-767 {
@@ -51,13 +61,13 @@
   position: relative;
   z-index: 3;
   left: -73px;
-  width: 79%;
+  width: 41%;
   padding-top: 39px;
-  margin-left: auto;
+  margin-left: 0;
 
   @include vp-1199 {
     width: 42.9%;
-    max-width: 365px;
+    max-width: 483px;
     left: -40px;
     padding-top: 0;
     margin-left: auto;

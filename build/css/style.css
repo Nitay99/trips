@@ -1238,6 +1238,10 @@ video {
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 textarea {
@@ -1402,6 +1406,7 @@ button,
 }
 
 .container {
+  position: relative;
   width: calc(100% - 90px);
   max-width: 1200px;
   margin: 0 auto;
@@ -1889,6 +1894,36 @@ button,
   }
 }
 
+.tours__clouds-and-mountains-bg {
+  position: absolute;
+  top: -18px;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .tours__clouds-and-mountains-bg {
+    top: -96px;
+    right: -308px;
+  }
+}
+
+.tours__clouds-bg {
+  position: absolute;
+  width: 837px;
+  bottom: -99px;
+  left: -231px;
+}
+@media (max-width: 1199px) {
+  .tours__clouds-bg {
+    display: none;
+  }
+}
+
+.tours__clouds-bg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 361px;
+}
+
 .tours__container {
   position: relative;
 }
@@ -2159,6 +2194,17 @@ button,
   }
 }
 
+.about__clouds-bg {
+  position: absolute;
+  top: -140px;
+  right: -145px;
+}
+@media (max-width: 1199px) {
+  .about__clouds-bg {
+    display: none;
+  }
+}
+
 @media (max-width: 1199px) {
   .about__img-wrap {
     display: -webkit-box;
@@ -2172,7 +2218,7 @@ button,
     top: 21px;
     left: -206px;
     width: 88%;
-    max-width: 812px;
+    max-width: 740px;
   }
 }
 @media (max-width: 767px) {
@@ -2203,14 +2249,14 @@ button,
   position: relative;
   z-index: 3;
   left: -73px;
-  width: 79%;
+  width: 41%;
   padding-top: 39px;
-  margin-left: auto;
+  margin-left: 0;
 }
 @media (max-width: 1199px) {
   .about__text-wrap {
     width: 42.9%;
-    max-width: 365px;
+    max-width: 483px;
     left: -40px;
     padding-top: 0;
     margin-left: auto;
@@ -3366,15 +3412,19 @@ button,
   .training-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 91px 115px;
+    gap: 17px 115px;
   }
   .training-list::before {
     content: "";
-    position: absolute;
-    top: 60px;
+    position: relative;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    top: 0;
     left: 7px;
     height: 57px;
     width: calc(35% + 117px);
+    margin-right: 200px;
     border-top: 1px solid rgba(2, 102, 193, 0.3);
     border-right: 1px solid rgba(2, 102, 193, 0.3);
     border-bottom: 1px solid rgba(2, 102, 193, 0.3);
@@ -3390,6 +3440,7 @@ button,
     padding-left: 33px;
   }
   .training-list::before {
+    position: absolute;
     width: 1px;
     height: 86%;
     top: 17px;
@@ -3425,7 +3476,8 @@ button,
 }
 @media (max-width: 767px) {
   .training-list__item::before {
-    bottom: 10px;
+    bottom: auto;
+    top: 12px;
     left: -33px;
   }
 }
@@ -3433,13 +3485,16 @@ button,
   .training-list__item {
     max-width: 100%;
     width: 35%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     font-size: 14px;
     line-height: 22px;
   }
   .training-list__item--ecology {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 @media (max-width: 767px) {
@@ -3450,6 +3505,9 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     font-size: 12px;
     line-height: 18px;
   }
@@ -3470,6 +3528,15 @@ button,
   .training-list__item:nth-child(3)::before,
 .training-list__item:nth-child(4)::before {
     bottom: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .training-list__item:nth-child(3):not(.training-list__item--ecology),
+.training-list__item:nth-child(4):not(.training-list__item--ecology) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
