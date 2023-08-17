@@ -2,16 +2,21 @@
   overflow-y: visible;
   overflow-x: hidden;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   color: $color-default-white;
+}
+
+.hero__slider .swiper-wrapper {
+  position: relative;
+  z-index: 10;
 }
 
 .hero__slide {
   padding-top: 80px;
   padding-bottom: 79.5px;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 
   @include vp-1199 {
     padding-top: 99px;

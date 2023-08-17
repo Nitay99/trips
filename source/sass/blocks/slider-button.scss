@@ -1,0 +1,38 @@
+.slider-button {
+  position: relative;
+  display: inline-flex;
+  width: 37px;
+  height: 35px;
+  right: auto;
+  left: auto;
+
+  color: $color-default-white;
+  border-width: 1px;
+  border-style: solid;
+  background-color: $color-additional;
+
+  @include hover-focus {
+    &:not(.swiper-button-disabled) {
+      background-color: $color-transparent;
+      color: $color-resolution-blue;
+      border-color: $color-resolution-blue;
+      outline: none;
+    }
+  }
+
+  @include active {
+    &:not(.swiper-button-disabled) {
+      color: $color-default-white;
+      border-color: $color-resolution-blue;
+      background-color: $color-resolution-blue;
+    }
+  }
+
+  &::after {
+    font-size: 0;
+  }
+}
+
+.slider-button.swiper-button-disabled {
+  opacity: 0.1;
+}

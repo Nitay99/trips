@@ -7,6 +7,7 @@ import {setPlayAudioClickHandler} from './modules/audio-frame';
 import './modules/section-title';
 import {initHeaderSlider} from './modules/sliders/header-slider';
 import {initTourSlider} from './modules/sliders/tours-slider';
+import {initTrainingSlider} from './modules/sliders/training-slider';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   setMenuClickHandler();
   initHeaderSlider();
   initTourSlider();
+  initTrainingSlider();
   setPlayVideoClickHandler();
   setPlayAudioClickHandler();
 

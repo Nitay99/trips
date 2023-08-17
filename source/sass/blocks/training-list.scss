@@ -1,0 +1,129 @@
+.training-list {
+  display: flex;
+  position: relative;
+  gap: 25px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style-type: none;
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+    gap: 91px 115px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 7px;
+      height: 57px;
+      width: calc(35% + 117px);
+
+      border-top: 1px solid transparentize($color-additional, 0.7);
+      border-right: 1px solid transparentize($color-additional, 0.7);
+      border-bottom: 1px solid transparentize($color-additional, 0.7);
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 33px;
+
+    &::before {
+      width: 1px;
+      height: 86%;
+      top: 17px;
+      left: 6.5px;
+
+      border: none;
+      background-color: transparentize($color-additional, 0.7);
+    }
+  }
+}
+
+.training-list__item {
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  max-width: 282px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -41px;
+    left: 1px;
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+    background-color: $color-additional;
+
+    @include vp-1199 {
+      bottom: -24px;
+      left: 0;
+    }
+
+    @include vp-767 {
+      bottom: 10px;
+      left: -33px;
+    }
+  }
+
+  @include vp-1199 {
+    max-width: 100%;
+    width: 35%;
+
+    font-size: 14px;
+    line-height: 22px;
+
+    &--ecology {
+      order: 1;
+    }
+  }
+
+  @include vp-767 {
+    width: 80%;
+    min-height: 36px;
+    padding-left: 31px;
+    align-items: center;
+
+    font-size: 12px;
+    line-height: 18px;
+
+    &--ecology {
+      order: 0;
+    }
+  }
+}
+
+.training-list__item:nth-child(3),
+.training-list__item:nth-child(4) {
+  @include vp-1199 {
+    &::before {
+      bottom: 57px;
+    }
+  }
+
+  @include vp-767 {
+    &::before {
+      bottom: 10px;
+    }
+  }
+}
+
+.training-list__item svg {
+  position: absolute;
+  top: 11.5px;
+  left: 0;
+
+  @include vp-1199 {
+    top: 8px;
+  }
+
+  @include vp-767 {
+    top: 4px;
+    width: 18px;
+  }
+}

@@ -11,7 +11,7 @@
     z-index: 1;
     position: absolute;
     left: 0;
-    bottom: -3px;
+    top: -17px;
 
     opacity: 0.05;
     font-size: 55px;
@@ -19,11 +19,13 @@
     color: inherit;
 
     @include vp-1199 {
+      top: -12px;
+
       font-size: 40px;
     }
 
     @include vp-767 {
-      bottom: 21px;
+      top: -2px;
 
       font-size: 26px;
       min-width: 256px;
