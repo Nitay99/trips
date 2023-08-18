@@ -1419,38 +1419,19 @@ button,
 
 .main-header {
   position: relative;
-  z-index: 0;
+  z-index: 2;
   background-color: #0266c1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/jpg/caucasus-mountains-tablet.jpg");
-  -webkit-transition: background-image 0.3s ease;
-  transition: background-image 0.3s ease;
+  -webkit-transition: display 0.3s ease;
+  transition: display 0.3s ease;
 }
-.main-header:has(.hero__slide--caucasus.swiper-slide-active) {
-  background-image: url("../img/jpg/caucasus-mountains.jpg");
+.main-header:has(.hero__slide--caucasus.swiper-slide-active) .main-header__bg-img picture:first-child img {
+  display: block;
 }
-@media (max-width: 1199px) {
-  .main-header:has(.hero__slide--caucasus.swiper-slide-active) {
-    background-image: url("../img/jpg/caucasus-mountains-tablet.jpg");
-    background-position: 50% 0;
-  }
+.main-header:has(.hero__slide--kamchatka.swiper-slide-active) .main-header__bg-img picture:nth-child(2) img {
+  display: block;
 }
-.main-header:has(.hero__slide--kamchatka.swiper-slide-active) {
-  background-image: url("../img/jpg/kamchatka-mountains.jpg");
-}
-@media (max-width: 1199px) {
-  .main-header:has(.hero__slide--kamchatka.swiper-slide-active) {
-    background-position: 50% 0;
-  }
-}
-.main-header:has(.hero__slide--altai.swiper-slide-active) {
-  background-image: url("../img/jpg/altai.jpg");
-}
-@media (max-width: 1199px) {
-  .main-header:has(.hero__slide--altai.swiper-slide-active) {
-    background-image: url("../img/jpg/altai-tablet.jpg");
-  }
+.main-header:has(.hero__slide--altai.swiper-slide-active) .main-header__bg-img picture:nth-child(3) img {
+  display: block;
 }
 @media (max-width: 1199px) {
   .main-header {
@@ -1466,6 +1447,23 @@ button,
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.main-header__bg-img {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-header__bg-img img {
+  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .main-header__overlay {
@@ -1645,8 +1643,6 @@ button,
 }
 
 .hero__slider {
-  overflow-y: visible;
-  overflow-x: hidden;
   position: relative;
   z-index: 2;
   color: #ffffff;
@@ -2215,7 +2211,7 @@ button,
             align-items: center;
     position: absolute;
     z-index: 2;
-    top: 21px;
+    bottom: 103px;
     left: -206px;
     width: 88%;
     max-width: 740px;
@@ -2327,7 +2323,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__text-wrap p:first-of-type {
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -3555,6 +3551,17 @@ button,
     top: 4px;
     width: 18px;
   }
+}
+
+.review-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  width: 790px;
+  padding: 20px;
 }
 
 /* @mixin hover-focus {

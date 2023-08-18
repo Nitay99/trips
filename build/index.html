@@ -18,6 +18,27 @@
   <body>
     <div class="wrapper">
       <header class="main-header">
+        <div class="main-header__bg-img">
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.webp 1x, img/jpg/caucasus-mountains-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/jpg/caucasus-mountains.webp 1x, img/jpg/caucasus-mountains@2x.webp 2x">
+
+            <source media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.jpg 1x, img/jpg/caucasus-mountains-tablet@2x.jpg 2x">
+            <img src="img/jpg/caucasus-mountains.jpg" width="1440" height="800" alt="Кавказские горы." srcset="img/jpg/caucasus-mountains@2x">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/jpg/kamchatka-mountains.webp 1x, img/jpg/kamchatka-mountains@2x.webp 2x">
+
+            <img src="img/jpg/kamchatka-mountains.jpg" width="1440" height="800" alt="Горы Камчатки." srcset="img/jpg/kamchatka-mountains@2x">
+          </picture>
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.webp 1x, img/jpg/altai-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/jpg/altai.webp 1x, img/jpg/altai@2x.webp 2x">
+
+            <source media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.jpg 1x, img/jpg/altai-tablet@2x.jpg 2x">
+            <img src="img/jpg/altai.jpg" width="1440" height="800" alt="Природа Алтая." srcset="img/jpg/altai@2x">
+          </picture>
+        </div>
         <div class="main-header__overlay"></div>
         <div class="main-header__row">
           <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
@@ -723,12 +744,31 @@
           <div class="about__text-wrap">
             <h2 class="section-title">О нас</h2>
             <h3>История компании</h3>
-            <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;– походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+            <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;– походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали&nbsp;жить. Спустя 5 лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
             <h3>Наша цель</h3>
             <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы берем на&nbsp;себя все организационные вопросы. При организации мы обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
           </div>
         </section>
-        <section class="reviews"></section>
+        <section class="reviews">
+          <div class="container">
+            <h2 class="section-title">Отзывы</h2>
+            <div class="reviews__container">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="review-card">
+                      <img src="img/jpg/reviewer-alex.jpg" width="258" height="253" alt="Фото сидящего Фролова Александра на фоне горы и голубго неба.">
+                      <div class="review-card__text-wrap">
+                        <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы – настоящие эксперты – всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места.</p>
+                        <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Еще никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="features"></section>
         <section class="gallery"></section>
         <section class="feedback"></section>

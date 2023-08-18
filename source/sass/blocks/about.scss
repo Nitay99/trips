@@ -30,7 +30,7 @@
     align-items: center;
     position: absolute;
     z-index: 2;
-    top: 21px;
+    bottom: 103px;
     left: -206px;
     width: 88%;
     max-width: 740px;
@@ -133,6 +133,6 @@
   width: 95%;
 
   @include vp-1199 {
-    width: 100%;
+    width: 98%;
   }
 }
