@@ -9,6 +9,7 @@
   color: $color-default-white;
   border-width: 1px;
   border-style: solid;
+  border-color: $color-additional;
   background-color: $color-additional;
 
   @include hover-focus {

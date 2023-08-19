@@ -22,8 +22,6 @@
     }
   }
 
-  transition: display $trans-default;
-
   @include vp-1199 {
     padding-top: 0;
 

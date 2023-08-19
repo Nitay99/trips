@@ -8,6 +8,7 @@ import './modules/section-title';
 import {initHeaderSlider} from './modules/sliders/header-slider';
 import {initTourSlider} from './modules/sliders/tours-slider';
 import {initTrainingSlider} from './modules/sliders/training-slider';
+import {initReviewSlider} from './modules/sliders/review-slider';
 
 // ---------------------------------
 
@@ -22,9 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   setMenuClickHandler();
+
   initHeaderSlider();
   initTourSlider();
   initTrainingSlider();
+  initReviewSlider();
+
   setPlayVideoClickHandler();
   setPlayAudioClickHandler();
 
