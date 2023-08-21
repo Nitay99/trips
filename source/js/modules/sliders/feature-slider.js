@@ -31,10 +31,12 @@ if (window.innerWidth > 1199) {
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 1199) {
-    if (swiper.destroyed === true || !swiper) {
+    if (!swiper || (swiper.destroyed === true)) {
       initFeatureSlider();
     }
   } else {
-    swiper.destroy(true, true);
+    if (swiper) {
+      swiper.destroy(true, true);
+    }
   }
 });
