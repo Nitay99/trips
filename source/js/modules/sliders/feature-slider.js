@@ -1,11 +1,12 @@
 // eslint-disable-next-line
-import Swiper, {Grid, Navigation} from '../../vendor/swiper';
+import Swiper, {Navigation} from '../../vendor/swiper';
+
+let swiper;
 
 const initFeatureSlider = () => {
-  // if (window.innerWidth > 1199) {
-  Swiper.use([Grid, Navigation]);
+  Swiper.use([Navigation]);
   // eslint-disable-next-line
-  const swiper = new Swiper('.features__slider', {
+  swiper = new Swiper('.features__slider', {
     // Optional parameters
     direction: 'horizontal',
 
@@ -14,41 +15,26 @@ const initFeatureSlider = () => {
       nextEl: '.features__slider-button-next',
       prevEl: '.features__slider-button-prev',
     },
-    // Responsive breakpoints
-    breakpoints: {
-      320: {
-        allowTouchMove: false,
-        slidesPerView: 1,
-        spaceBetween: 15,
-        grid: {
-          rows: 5,
-          fill: 'row',
-        },
-      },
-      768: {
-        slidesPerView: 2,
-        initialSlide: 1,
-        spaceBetween: 30,
-        grid: {
-          rows: 3,
-          fill: 'row',
-        },
-      },
-      1200: {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        centeredSlides: true,
-        initialSlide: 2,
-        loop: true,
-      },
-    },
+
+    allowTouchMove: false,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    centeredSlides: true,
+    initialSlide: 2,
+    loop: true,
   });
-  // }
 };
 
-// if (window.innerWidth < 1200) {
-//   swiper.destroy();
-// }
-// };
+if (window.innerWidth > 1199) {
+  initFeatureSlider();
+}
 
-export {initFeatureSlider};
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1199) {
+    if (swiper.destroyed === true || !swiper) {
+      initFeatureSlider();
+    }
+  } else {
+    swiper.destroy(true, true);
+  }
+});

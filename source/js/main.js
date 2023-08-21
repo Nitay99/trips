@@ -1,16 +1,15 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {setMenuClickHandler} from './modules/menu';
 import {setPlayVideoClickHandler} from './modules/video';
-import {setPlayAudioClickHandler} from './modules/audio-frame';
 import './modules/section-title';
 import {initHeaderSlider} from './modules/sliders/header-slider';
 import {initTourSlider} from './modules/sliders/tours-slider';
 import {initTrainingSlider} from './modules/sliders/training-slider';
 import {initReviewSlider} from './modules/sliders/review-slider';
-import {initFeatureSlider} from './modules/sliders/feature-slider';
+import './modules/sliders/feature-slider';
 import {initGallerySlider} from './modules/sliders/gallery-slider';
+import {initMap} from './modules/map';
 
 // ---------------------------------
 
@@ -30,16 +29,15 @@ window.addEventListener('DOMContentLoaded', () => {
   initTourSlider();
   initTrainingSlider();
   initReviewSlider();
-  initFeatureSlider();
   initGallerySlider();
 
   setPlayVideoClickHandler();
-  setPlayAudioClickHandler();
+
+  initMap();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
     const form = new Form();
     window.form = form;
     form.init();

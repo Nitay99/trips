@@ -100,10 +100,14 @@
   justify-content: center;
   padding-top: 9px;
   padding-left: 22px;
-  width: 76px;
+  width: 79px;
 
   font-size: 12px;
   line-height: 1em;
+
+  @include vp-1199 {
+    width: 76px;
+  }
 }
 
 .tour-card__time svg {

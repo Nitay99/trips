@@ -15,13 +15,16 @@
 }
 
 .features__bg-clouds {
-  top: -175px;
   position: absolute;
+  top: -182px;
+  left: -9px;
+  width: 725px;
 
   &--two {
     width: 578px;
     top: 11px;
     right: 22px;
+    left: auto;
   }
 
   @include vp-1199 {
@@ -53,7 +56,7 @@
   margin: 0 auto;
 
   @include vp-1199 {
-    width: calc(100% - 90px);
+    width: 88.28%;
   }
 
   @include vp-767 {
@@ -66,6 +69,13 @@
 
   @include vp-1199 {
     margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 15px;
   }
 }
 
@@ -74,22 +84,22 @@
   width: 380px;
 
   @include vp-1199 {
-    width: 35%;
+    width: 47.7%;
+  }
+
+  @include vp-767 {
+    width: 100%;
   }
 }
 
 .features__slide {
   @include vp-1199 {
-    position: relative;
-    left: 25%;
-  }
-
-  @include vp-767 {
-    left: 0;
+    margin: 0 auto;
   }
 }
 
 .features__slider-buttons-wrap {
+  user-select: none;
   display: flex;
   gap: 4px;
   align-self: center;

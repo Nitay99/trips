@@ -44,7 +44,7 @@
 }
 
 .training__slider {
-  width: calc(100% - 50px);
+  width: calc(84% + 40px);
   max-width: 1240px;
   margin: 0 auto;
   padding-top: 20px;
@@ -55,6 +55,7 @@
   position: relative;
 
   @include vp-1199 {
+    width: calc(88.28% + 40px);
     margin-bottom: 22px;
   }
 
@@ -91,6 +92,7 @@
 }
 
 .training__slider-buttons-wrap {
+  user-select: none;
   position: absolute;
   top: 17px;
   right: 22px;

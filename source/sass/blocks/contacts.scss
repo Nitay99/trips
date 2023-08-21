@@ -1,0 +1,103 @@
+.contacts {
+  padding-top: 82px;
+  padding-bottom: 102px;
+
+  @include vp-1199 {
+    padding-top: 89px;
+    padding-bottom: 71px;
+  }
+
+  @include vp-767 {
+    padding-top: 68px;
+    padding-bottom: 29px;
+  }
+}
+
+.contacts__container {
+  display: flex;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
+
+.contacts__col {
+  width: 40%;
+  margin-right: 135px;
+
+  @include vp-1199 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 39px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 28px;
+  }
+}
+
+.contacts__col h2 {
+  margin-bottom: 22px;
+
+  @include vp-1199 {
+    margin-bottom: 17px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 11px;
+  }
+}
+
+.contacts__col p {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  @include vp-1199 {
+    width: 71%;
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    width: 92%;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.contacts__map {
+  margin-top: 74px;
+  height: 324px;
+  width: 585px;
+
+  @include vp-1199 {
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    min-height: 320px;
+  }
+}
+
+.contacts__map img {
+  object-fit: cover;
+  width: 100%;
+  height: 324px;
+
+  @include vp-1199 {
+    height: 340px;
+  }
+
+  @include vp-767 {
+    height: 320px;
+  }
+}
+
+.contacts__map.leaflet-container img {
+  width: 0;
+  height: 0;
+}

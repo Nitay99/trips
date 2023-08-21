@@ -1,0 +1,125 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style-type: none;
+
+  @include vp-1199 {
+    flex-direction: row;
+    gap: 41px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.contact-list__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 56px;
+
+  @include vp-1199 {
+    width: 27%;
+    padding-left: 34px;
+  }
+
+  @include vp-767 {
+    width: 55%;
+    padding-left: 32px;
+  }
+}
+
+.contact-list__item--address {
+  @include vp-1199 {
+    width: 55%;
+  }
+
+  @include vp-767 {
+    width: 68%;
+  }
+}
+
+.contact-list__item svg {
+  position: absolute;
+  top: 12px;
+  left: 0;
+
+  @include vp-1199 {
+    width: 23px;
+    top: -1px;
+  }
+
+  @include vp-767 {
+    width: 22px;
+  }
+}
+
+.contact-list__item--mail svg {
+  top: 16px;
+
+  @include vp-1199 {
+    top: 2px;
+  }
+}
+
+.contact-list__item--address svg {
+  left: 3px;
+
+  @include vp-1199 {
+    left: 1px;
+  }
+
+  @include vp-767 {
+    width: 18px;
+  }
+}
+
+.contact-list__name {
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    margin-bottom: 6px;
+
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.contact-list__value {
+  margin-left: 0;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.contact-list__value a {
+  @include hover {
+    border-bottom: 1px solid;
+  }
+
+  @include focus {
+    outline: 1px solid;
+    border-bottom: 0;
+  }
+
+  @include active {
+    outline: none;
+    border-bottom: 0;
+  }
+}

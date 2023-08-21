@@ -49,28 +49,25 @@
 
   &--footer {
     width: auto;
-    max-width: 330px;
+    max-width: 350px;
 
     @include vp-767 {
       flex-direction: column;
       align-items: flex-start;
       padding-left: 0;
       padding-top: 0;
-      margin-top: 13px;
-      row-gap: 5px;
-      column-gap: 27px;
+      row-gap: 0;
     }
   }
 }
 
-.site-list__item {
-
-}
-
 .site-list__link {
-  padding: 3px 5px;
+  padding: 3px 5px 2px;
   position: relative;
   z-index: 3;
+  display: inline-flex;
+  max-width: 130px;
+  border-bottom: 1px solid $color-transparent;
 
   color: inherit;
 
