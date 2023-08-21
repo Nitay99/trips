@@ -3,6 +3,7 @@
   line-height: 1em;
   font-weight: 800;
 
+  width: 80%;
   margin-top: 0;
   position: relative;
 
@@ -39,5 +40,31 @@
   @include vp-767 {
     width: 70%;
     font-size: 22px;
+  }
+
+  &--align-center {
+    width: 800px;
+    text-align: center;
+
+    &::before {
+      left: 170px;
+    }
+
+    @include vp-1199 {
+      width: 600px;
+
+      &::before {
+        left: 132px;
+      }
+    }
+
+    @include vp-767 {
+      width: 320px;
+
+      &::before {
+        top: -5px;
+        left: 31px;
+      }
+    }
   }
 }

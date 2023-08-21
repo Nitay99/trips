@@ -44,7 +44,7 @@
   }
 }
 
-@mixin vp-1441 {
+@mixin min-1441 {
   @media (min-width: 1441px) {
     @content;
   }

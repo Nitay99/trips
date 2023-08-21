@@ -1,39 +1,37 @@
 // eslint-disable-next-line
 import Swiper, {Navigation} from '../../vendor/swiper';
 
-const initReviewSlider = () => {
+const initGallerySlider = () => {
   Swiper.use([Navigation]);
   // eslint-disable-next-line
-  const swiper = new Swiper('.reviews__slider', {
+  const swiper = new Swiper('.gallery__slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
 
     // If we need pagination
     navigation: {
-      nextEl: '.reviews__slider-button-next',
-      prevEl: '.reviews__slider-button-prev',
+      nextEl: '.gallery__slider-button-next',
+      prevEl: '.gallery__slider-button-prev',
     },
-
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
-        spaceBetween: 18,
+        slidesPerView: 'auto',
+        spaceBetween: 3,
+        allowTouchMove: false,
       },
       768: {
-        slidesPerView: 1.245,
-        spaceBetween: 30,
-        allowTouchMove: true,
+        slidesPerView: 'auto',
+        spaceBetween: 5,
       },
       1200: {
-        slidesPerView: 1.62,
-        spaceBetween: 30,
-        allowTouchMove: false,
+        slidesPerView: 'auto',
+        spaceBetween: 6,
       },
     },
   });
 };
 
-export {initReviewSlider};
+export {initGallerySlider};

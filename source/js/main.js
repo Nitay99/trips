@@ -9,6 +9,8 @@ import {initHeaderSlider} from './modules/sliders/header-slider';
 import {initTourSlider} from './modules/sliders/tours-slider';
 import {initTrainingSlider} from './modules/sliders/training-slider';
 import {initReviewSlider} from './modules/sliders/review-slider';
+import {initFeatureSlider} from './modules/sliders/feature-slider';
+import {initGallerySlider} from './modules/sliders/gallery-slider';
 
 // ---------------------------------
 
@@ -28,6 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initTourSlider();
   initTrainingSlider();
   initReviewSlider();
+  initFeatureSlider();
+  initGallerySlider();
 
   setPlayVideoClickHandler();
   setPlayAudioClickHandler();
