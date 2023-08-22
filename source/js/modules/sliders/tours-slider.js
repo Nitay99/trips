@@ -21,6 +21,7 @@ const initTourSlider = () => {
       320: {
         slidesPerView: 1,
         spaceBetween: 18,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 2,

@@ -89,7 +89,7 @@
   }
 }
 
-.gallery__slide picture:nth-child(2) {
+.gallery__slide picture {
   height: 100%;
 }
 
@@ -104,7 +104,7 @@
   }
 }
 
-.gallery__slide--two-images picture:first-child img {
+.gallery__slide-img-small img {
   @include only-320 {
     height: auto;
   }

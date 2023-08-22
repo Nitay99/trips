@@ -21,25 +21,31 @@
       <header class="main-header">
         <h1 class="visually-hidden">Lifetour, организация походов в горы.</h1>
         <div class="main-header__bg-img">
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.webp 1x, img/jpg/caucasus-mountains-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/jpg/caucasus-mountains.webp 1x, img/jpg/caucasus-mountains@2x.webp 2x">
+          <div class="main-header__img-caucasus">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.webp 1x, img/jpg/caucasus-mountains-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/jpg/caucasus-mountains.webp 1x, img/jpg/caucasus-mountains@2x.webp 2x">
 
-            <source media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.jpg 1x, img/jpg/caucasus-mountains-tablet@2x.jpg 2x">
-            <img src="img/jpg/caucasus-mountains.jpg" width="1440" height="800" alt="Кавказские горы." srcset="img/jpg/caucasus-mountains@2x.jpg">
-          </picture>
-          <picture>
-            <source type="image/webp" srcset="img/jpg/kamchatka-mountains.webp 1x, img/jpg/kamchatka-mountains@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.jpg 1x, img/jpg/caucasus-mountains-tablet@2x.jpg 2x">
+              <img src="img/jpg/caucasus-mountains.jpg" width="1440" height="800" alt="Кавказские горы." srcset="img/jpg/caucasus-mountains@2x.jpg">
+            </picture>
+          </div>
+          <div class="main-header__img-kamchatka">
+            <picture>
+              <source type="image/webp" srcset="img/jpg/kamchatka-mountains.webp 1x, img/jpg/kamchatka-mountains@2x.webp 2x">
 
-            <img src="img/jpg/kamchatka-mountains.jpg" width="1440" height="800" alt="Горы Камчатки." srcset="img/jpg/kamchatka-mountains@2x.jpg">
-          </picture>
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.webp 1x, img/jpg/altai-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/jpg/altai.webp 1x, img/jpg/altai@2x.webp 2x">
+              <img src="img/jpg/kamchatka-mountains.jpg" width="1440" height="800" alt="Горы Камчатки." srcset="img/jpg/kamchatka-mountains@2x.jpg">
+            </picture>
+          </div>
+          <div class="main-header__img-altai">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.webp 1x, img/jpg/altai-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/jpg/altai.webp 1x, img/jpg/altai@2x.webp 2x">
 
-            <source media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.jpg 1x, img/jpg/altai-tablet@2x.jpg 2x">
-            <img src="img/jpg/altai.jpg" width="1440" height="800" alt="Природа Алтая." srcset="img/jpg/altai@2x.jpg">
-          </picture>
+              <source media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.jpg 1x, img/jpg/altai-tablet@2x.jpg 2x">
+              <img src="img/jpg/altai.jpg" width="1440" height="800" alt="Природа Алтая." srcset="img/jpg/altai@2x.jpg">
+            </picture>
+          </div>
         </div>
         <div class="main-header__overlay"></div>
         <div class="main-header__row">
@@ -129,8 +135,12 @@
                     </p>
                     <a href="#" class="btn">Смотреть тур</a>
                     <div class="hero__card hero__card--two slide-cards">
-                      <img src="img/png/photo-slide-card-1.png" width="308" height="407" alt="Карточка природного места Камчатки.">
-                      <img src="img/png/photo-slide-card-2.png" width="277" height="366" alt="Девушка у горы Камчатки.">
+                      <div class="slide-cards__img-big">
+                        <img src="img/png/photo-slide-card-1.png" width="308" height="407" alt="Карточка природного места Камчатки.">
+                      </div>
+                      <div class="slide-cards__img-small">
+                        <img src="img/png/photo-slide-card-2.png" width="277" height="366" alt="Девушка у горы Камчатки.">
+                      </div>
                     </div>
                   </div>
                   <div class="hero__row">
@@ -1064,12 +1074,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide gallery__slide--two-images">
-                  <picture>
-                    <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-2.webp 1x, img/jpg/gallery/gallery-photo-2@2x.webp 2x">
+                <div class="gallery__slide">
+                  <div class="gallery__slide-img-small">
+                    <picture>
+                      <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-2.webp 1x, img/jpg/gallery/gallery-photo-2@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-2.jpg" width="298" height="179" alt="Люди у костра в темное." srcset="img/jpg/gallery/gallery-photo-2@2x.jpg">
-                  </picture>
+                      <img src="img/jpg/gallery/gallery-photo-2.jpg" width="298" height="179" alt="Люди у костра в темное." srcset="img/jpg/gallery/gallery-photo-2@2x.jpg">
+                    </picture>
+                  </div>
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-3.webp 1x, img/jpg/gallery/gallery-photo-3@2x.webp 2x">
 
@@ -1087,12 +1099,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide gallery__slide--two-images">
-                  <picture>
-                    <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-5.webp 1x, img/jpg/gallery/gallery-photo-5@2x.webp 2x">
+                <div class="gallery__slide">
+                  <div class="gallery__slide-img-small">
+                    <picture>
+                      <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-5.webp 1x, img/jpg/gallery/gallery-photo-5@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-5.jpg" width="298" height="179" alt="Люди и снег в горах." srcset="img/jpg/gallery/gallery-photo-5@2x.jpg">
-                  </picture>
+                      <img src="img/jpg/gallery/gallery-photo-5.jpg" width="298" height="179" alt="Люди и снег в горах." srcset="img/jpg/gallery/gallery-photo-5@2x.jpg">
+                    </picture>
+                  </div>
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-6.webp 1x, img/jpg/gallery/gallery-photo-6@2x.webp 2x">
 
@@ -1226,30 +1240,32 @@
             </div>
             <a href="tel:88007253232" class="main-nav__phone main-nav__phone--tablet contact-phone">8 800 725 32 32</a>
           </nav>
-          <ul class="main-footer__social social-list">
-            <li class="social-list__item">
-              <a href="#" class="social-list__link" aria-label="Вконтакте.">
-                <svg width="14" height="8" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
-                  <use xlink:href="img/sprite.svg#vk-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link" aria-label="Одноклассники.">
-                <svg width="9" height="16" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
-                  <use xlink:href="img/sprite.svg#odnoklassniki-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="#" class="social-list__link" aria-label="Реддит.">
-                <svg width="14" height="15" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
-                  <use xlink:href="img/sprite.svg#reddit-icon"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="main-footer__privacy privacy-policy">Политика конфиденциальности</a>
+          <div class="main-footer__row">
+            <ul class="main-footer__social social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link" aria-label="Вконтакте.">
+                  <svg width="14" height="8" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link" aria-label="Одноклассники.">
+                  <svg width="9" height="16" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                    <use xlink:href="img/sprite.svg#odnoklassniki-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link" aria-label="Реддит.">
+                  <svg width="14" height="15" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                    <use xlink:href="img/sprite.svg#reddit-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="main-footer__privacy privacy-policy">Политика конфиденциальности</a>
+          </div>
         </div>
       </footer>
     </div>

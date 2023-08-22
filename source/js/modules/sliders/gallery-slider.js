@@ -20,15 +20,17 @@ const initGallerySlider = () => {
       320: {
         slidesPerView: 'auto',
         spaceBetween: 3,
-        allowTouchMove: false,
+        allowTouchMove: true,
       },
       768: {
         slidesPerView: 'auto',
         spaceBetween: 5,
+        allowTouchMove: true,
       },
       1200: {
         slidesPerView: 'auto',
         spaceBetween: 6,
+        allowTouchMove: false,
       },
     },
   });

@@ -20,10 +20,10 @@
     &--dropdown-menu {
       flex-direction: column;
       align-items: flex-start;
-      gap: 18px;
-      padding-top: 46px;
+      gap: 12px;
+      padding-top: 43px;
       padding-right: 40px;
-      padding-bottom: 66px;
+      padding-bottom: 64px;
       padding-left: 40px;
       width: 100%;
       max-width: 100%;
@@ -42,8 +42,9 @@
     padding-left: 10px;
 
     &--dropdown-menu {
-      padding-bottom: 46px;
-      top: 49px;
+      padding-bottom: 43px;
+      top: 47px;
+      gap: 6px;
     }
   }
 

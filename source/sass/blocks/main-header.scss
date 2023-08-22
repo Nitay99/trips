@@ -5,19 +5,19 @@
   background-color: $color-additional;
 
   &:has(.hero__slide--caucasus.swiper-slide-active) {
-    .main-header__bg-img picture:first-child img {
+    .main-header__bg-img .main-header__img-caucasus img {
       display: block;
     }
   }
 
   &:has(.hero__slide--kamchatka.swiper-slide-active) {
-    .main-header__bg-img picture:nth-child(2) img {
+    .main-header__bg-img .main-header__img-kamchatka img {
       display: block;
     }
   }
 
   &:has(.hero__slide--altai.swiper-slide-active) {
-    .main-header__bg-img picture:nth-child(3) img {
+    .main-header__bg-img .main-header__img-altai img {
       display: block;
     }
   }
@@ -51,6 +51,9 @@
 .main-header__bg-img img {
   display: none;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }

@@ -21,6 +21,7 @@ const initHeaderSlider = () => {
       // when window width is >= 320px
       320: {
         spaceBetween: 30,
+        allowTouchMove: true,
       },
       768: {
         spaceBetween: 30,

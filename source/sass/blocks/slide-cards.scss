@@ -6,30 +6,40 @@
   }
 }
 
-.slide-cards img {
+.slide-cards__img-big {
+  height: auto;
   position: relative;
-}
-
-.slide-cards img:first-child {
-  right: -175px;
+  left: 175px;
 
   @include vp-1199 {
-    top: -16px;
-    right: auto;
-    left: 31px;
+    left: 32px;
+    top: -15px;
+  }
+}
+
+.slide-cards__img-big img {
+  @include vp-1199 {
     width: 266px;
     height: 351px;
   }
 }
 
-.slide-cards img:nth-child(2) {
+.slide-cards__img-small {
+  align-self: flex-end;
+  position: relative;
+  top: 52px;
+
+  @include vp-1199 {
+    top: -2px;
+    right: 30px;
+  }
+}
+
+.slide-cards__img-small img {
   height: 366px;
-  top: 93px;
 
   @include vp-1199 {
     width: 239px;
     height: 311px;
-    top: 38px;
-    left: -30px;
   }
 }
