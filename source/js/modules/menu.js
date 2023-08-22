@@ -1,11 +1,14 @@
 const header = document.querySelector('.main-header');
-const navMain = header.querySelector('.main-nav');
-const navToggle = header.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
+const navMain = header ? header.querySelector('.main-nav') : false;
+const navToggle = header ? header.querySelector('.main-nav__toggle') : false;
+
+if (navMain) {
+  navMain.classList.remove('main-nav--nojs');
+}
 
 const setMenuClickHandler = () => {
-  if (navToggle) {
+  if (navMain && navToggle) {
     navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
@@ -17,5 +20,6 @@ const setMenuClickHandler = () => {
     });
   }
 };
+
 
 export {setMenuClickHandler};
