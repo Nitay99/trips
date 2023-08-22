@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding-top: 37px;
+    padding-top: 38px;
     padding-bottom: 30px;
   }
 }
@@ -61,8 +61,8 @@
 
   @include vp-767 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5%;
+    padding-left: 5%;
     margin-bottom: 17.5px;
   }
 }
@@ -71,7 +71,8 @@
   height: auto;
 }
 
-.training h3 {
+.training__slider h3 {
+  width: 80%;
   font-size: 21px;
   line-height: 1em;
 
@@ -87,7 +88,8 @@
   @include vp-767 {
     font-size: 16px;
 
-    margin-bottom: 33.5px;
+    width: 70%;
+    margin-bottom: 33px;
   }
 }
 
@@ -122,14 +124,24 @@
 }
 
 .training__list-wrap h3 {
+  width: 80%;
+  margin-top: 0;
   margin-bottom: 41px;
+
+  font-size: 21px;
+  line-height: 1em;
 
   @include vp-1199 {
     margin-bottom: 40px;
+
+    font-size: 18px;
   }
 
   @include vp-767 {
+    width: 70%;
     margin-bottom: 29px;
+
+    font-size: 16px;
   }
 }
 

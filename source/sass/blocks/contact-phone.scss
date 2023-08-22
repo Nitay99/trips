@@ -4,6 +4,8 @@
   font-size: 18px;
   line-height: 1em;
 
+  max-width: 145px;
+
   @include hover {
     border-bottom: 1px solid;
   }

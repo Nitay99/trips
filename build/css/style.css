@@ -1418,9 +1418,7 @@ button,
 }
 @media (max-width: 767px) {
   .container {
-    width: 100%;
-    padding-right: 5%;
-    padding-left: 5%;
+    width: 90%;
   }
 }
 
@@ -1622,7 +1620,13 @@ button,
 }
 @media (max-width: 767px) {
   .main-footer__list-wrap {
-    margin-top: 12px;
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-footer__list {
+    margin-top: 9px;
   }
 }
 
@@ -1867,6 +1871,7 @@ button,
 }
 
 .hero__info svg {
+  min-width: 11px;
   margin-right: 9px;
 }
 
@@ -1948,9 +1953,9 @@ button,
 
 .tours__clouds-bg {
   position: absolute;
-  width: 837px;
-  bottom: -99px;
-  left: -231px;
+  width: 400px;
+  bottom: -36px;
+  left: -31px;
 }
 @media (max-width: 1199px) {
   .tours__clouds-bg {
@@ -1959,9 +1964,9 @@ button,
 }
 
 .tours__clouds-bg img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 361px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 269px;
 }
 
 .tours__container {
@@ -1995,6 +2000,10 @@ button,
     width: 100%;
     margin-bottom: 28px;
   }
+}
+
+.tours__slider .swiper-slide {
+  height: auto;
 }
 
 .tours__slider-buttons-wrap {
@@ -2036,8 +2045,9 @@ button,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.7px;
+  max-width: 250px;
   position: relative;
-  padding-right: 24px;
+  padding-right: 22px;
 }
 @media (hover: hover) {
   .tours__link:hover:not(:active):not(.tours__link--disabled) {
@@ -2079,7 +2089,7 @@ button,
 }
 @media (max-width: 767px) {
   .training {
-    padding-top: 37px;
+    padding-top: 38px;
     padding-bottom: 30px;
   }
 }
@@ -2138,8 +2148,8 @@ button,
 @media (max-width: 767px) {
   .training__slider {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5%;
+    padding-left: 5%;
     margin-bottom: 17.5px;
   }
 }
@@ -2148,22 +2158,24 @@ button,
   height: auto;
 }
 
-.training h3 {
+.training__slider h3 {
+  width: 80%;
   font-size: 21px;
   line-height: 1em;
   margin-top: 0;
   margin-bottom: 42px;
 }
 @media (max-width: 1199px) {
-  .training h3 {
+  .training__slider h3 {
     font-size: 18px;
     margin-bottom: 33px;
   }
 }
 @media (max-width: 767px) {
-  .training h3 {
+  .training__slider h3 {
     font-size: 16px;
-    margin-bottom: 33.5px;
+    width: 70%;
+    margin-bottom: 33px;
   }
 }
 
@@ -2205,16 +2217,23 @@ button,
 }
 
 .training__list-wrap h3 {
+  width: 80%;
+  margin-top: 0;
   margin-bottom: 41px;
+  font-size: 21px;
+  line-height: 1em;
 }
 @media (max-width: 1199px) {
   .training__list-wrap h3 {
     margin-bottom: 40px;
+    font-size: 18px;
   }
 }
 @media (max-width: 767px) {
   .training__list-wrap h3 {
+    width: 70%;
     margin-bottom: 29px;
+    font-size: 16px;
   }
 }
 
@@ -2251,8 +2270,8 @@ button,
 
 .about__clouds-bg {
   position: absolute;
-  top: -140px;
-  right: -145px;
+  top: -113px;
+  right: 3px;
 }
 @media (max-width: 1199px) {
   .about__clouds-bg {
@@ -2321,7 +2340,8 @@ button,
   .about__text-wrap {
     width: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding-right: 5%;
+    padding-left: 5%;
     margin-left: 0;
     left: 0;
   }
@@ -2394,7 +2414,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__text-wrap p:first-of-type {
-    width: 100%;
+    width: calc(100% + 2px);
   }
 }
 
@@ -2451,8 +2471,8 @@ button,
 @media (max-width: 767px) {
   .reviews__slider {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 
@@ -2483,6 +2503,8 @@ button,
 
 .features {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   padding-top: 66px;
   padding-bottom: 65px;
 }
@@ -2540,7 +2562,7 @@ button,
 }
 @media (max-width: 767px) {
   .features h2 {
-    margin-bottom: 30px;
+    margin-bottom: 28.8px;
   }
 }
 
@@ -2626,7 +2648,7 @@ button,
 }
 
 .gallery {
-  max-width: 1725px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 65px;
 }
@@ -2845,7 +2867,7 @@ button,
 @media (max-width: 1199px) {
   .feedback__container h2 {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 25px;
   }
 }
@@ -3071,8 +3093,8 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts {
-    padding-top: 89px;
-    padding-bottom: 71px;
+    padding-top: 88px;
+    padding-bottom: 70px;
   }
 }
 @media (max-width: 767px) {
@@ -3194,8 +3216,6 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
   width: 100%;
   padding-right: 8%;
@@ -3286,6 +3306,14 @@ button,
 
 .main-nav__list {
   z-index: 2;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 16px;
+}
+@media (max-width: 1199px) {
+  .main-nav__list {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -3295,6 +3323,10 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .main-nav--nojs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -3313,6 +3345,7 @@ button,
         -ms-flex-order: 1;
             order: 1;
     padding-left: 0;
+    margin-left: -5px;
     row-gap: 12px;
   }
 }
@@ -3341,7 +3374,7 @@ button,
   .main-nav__phone {
     position: absolute;
     z-index: 3;
-    right: 15px;
+    right: 5%;
     top: 57px;
     margin-top: 0;
   }
@@ -3349,18 +3382,15 @@ button,
 
 .site-list {
   padding-left: 0;
-  margin-top: 0;
   margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 22px;
   width: 589px;
+  max-width: 680px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3432,7 +3462,7 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  max-width: 130px;
+  max-width: 195px;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   color: inherit;
 }
@@ -3582,6 +3612,7 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  text-align: center;
   color: #ffffff;
   font-size: 16px;
   line-height: 1em;
@@ -3626,6 +3657,7 @@ button,
   font-weight: 600;
   font-size: 18px;
   line-height: 1em;
+  max-width: 145px;
 }
 @media (hover: hover) {
   .contact-phone:hover:not(:active) {
@@ -3964,6 +3996,7 @@ button,
   color: #ffffff;
   background-color: #2d383f;
   width: 100%;
+  height: 100%;
   min-height: 412px;
   padding-top: 28px;
   padding-right: 19px;
@@ -4129,6 +4162,7 @@ button,
   .tour-card__title {
     width: 80%;
     margin-bottom: 14px;
+    padding-bottom: 17px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -4156,7 +4190,7 @@ button,
 }
 @media (max-width: 1199px) {
   .details__item {
-    min-width: 69px;
+    min-width: 63px;
   }
 }
 
@@ -4171,6 +4205,11 @@ button,
   font-size: 13px;
   line-height: 1em;
   margin-left: 0;
+}
+@media (max-width: 767px) {
+  .details__value {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4526,7 +4565,7 @@ button,
   .review-card img {
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
 
@@ -4563,6 +4602,11 @@ button,
   .review-card__text-wrap p {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .review-card__text-wrap p {
+    width: calc(100% + 2px);
   }
 }
 
@@ -4622,7 +4666,7 @@ button,
 }
 @media (max-width: 767px) {
   .feature-card {
-    padding-top: 20px;
+    padding-top: 19.5px;
     padding-right: 10px;
     padding-bottom: 6px;
     padding-left: 10px;
@@ -4649,7 +4693,7 @@ button,
   .feature-card__icon {
     width: 48px;
     height: 48px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 }
 @media (max-width: 767px) {

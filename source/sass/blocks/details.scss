@@ -9,7 +9,7 @@
   max-width: 90px;
 
   @include vp-1199 {
-    min-width: 69px;
+    min-width: 63px;
   }
 }
 
@@ -26,6 +26,10 @@
   line-height: 1em;
 
   margin-left: 0;
+
+  @include vp-767 {
+    font-size: 12px;
+  }
 }
 
 .details__value svg {

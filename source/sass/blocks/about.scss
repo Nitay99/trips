@@ -18,8 +18,8 @@
 
 .about__clouds-bg {
   position: absolute;
-  top: -140px;
-  right: -145px;
+  top: -113px;
+  right: 3px;
 
   @include vp-1199 {
     display: none;
@@ -78,7 +78,8 @@
   @include vp-767 {
     width: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding-right: 5%;
+    padding-left: 5%;
     margin-left: 0;
     left: 0;
   }
@@ -144,6 +145,6 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    width: calc(100% + 2px);
   }
 }

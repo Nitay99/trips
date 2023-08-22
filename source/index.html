@@ -23,10 +23,10 @@
         <div class="main-header__bg-img">
           <div class="main-header__img-caucasus">
             <picture>
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.webp 1x, img/jpg/caucasus-mountains-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.webp 1x">
               <source type="image/webp" srcset="img/jpg/caucasus-mountains.webp 1x, img/jpg/caucasus-mountains@2x.webp 2x">
 
-              <source media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.jpg 1x, img/jpg/caucasus-mountains-tablet@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/jpg/caucasus-mountains-tablet.jpg 1x">
               <img src="img/jpg/caucasus-mountains.jpg" width="1440" height="800" alt="Кавказские горы." srcset="img/jpg/caucasus-mountains@2x.jpg">
             </picture>
           </div>
@@ -34,7 +34,7 @@
             <picture>
               <source type="image/webp" srcset="img/jpg/kamchatka-mountains.webp 1x, img/jpg/kamchatka-mountains@2x.webp 2x">
 
-              <img src="img/jpg/kamchatka-mountains.jpg" width="1440" height="800" alt="Горы Камчатки." srcset="img/jpg/kamchatka-mountains@2x.jpg">
+              <img src="img/jpg/kamchatka-mountains.jpg" loading="lazy" width="1440" height="800" alt="Горы Камчатки." srcset="img/jpg/kamchatka-mountains@2x.jpg">
             </picture>
           </div>
           <div class="main-header__img-altai">
@@ -43,7 +43,7 @@
               <source type="image/webp" srcset="img/jpg/altai.webp 1x, img/jpg/altai@2x.webp 2x">
 
               <source media="(max-width: 1199px)" srcset="img/jpg/altai-tablet.jpg 1x, img/jpg/altai-tablet@2x.jpg 2x">
-              <img src="img/jpg/altai.jpg" width="1440" height="800" alt="Природа Алтая." srcset="img/jpg/altai@2x.jpg">
+              <img src="img/jpg/altai.jpg" width="1440" height="800" loading="lazy" alt="Природа Алтая." srcset="img/jpg/altai@2x.jpg">
             </picture>
           </div>
         </div>
@@ -108,7 +108,7 @@
                       <picture>
                         <source type="image/webp" srcset="img/jpg/video-overlay-mountains.webp 1x, img/jpg/video-overlay-mountains@2x.webp 2x">
 
-                        <img src="img/jpg/video-overlay-mountains.jpg" width="482" height="317" alt="Обложка видео, на которой стоит человек на горе." srcset="img/jpg/video-overlay-mountains@2x.jpg">
+                        <img src="img/jpg/video-overlay-mountains.jpg" loading="lazy" width="482" height="317" alt="Обложка видео, на которой стоит человек на горе." srcset="img/jpg/video-overlay-mountains@2x.jpg">
                       </picture>
                     </div>
                   </div>
@@ -136,10 +136,18 @@
                     <a href="#" class="btn">Смотреть тур</a>
                     <div class="hero__card hero__card--two slide-cards">
                       <div class="slide-cards__img-big">
-                        <img src="img/png/photo-slide-card-1.png" width="308" height="407" alt="Карточка природного места Камчатки.">
+                        <picture>
+                          <source type="image/webp" srcset="img/png/photo-slide-card-1.webp 1x, img/png/photo-slide-card-1@2x.webp 2x">
+
+                          <img src="img/png/photo-slide-card-1.png" loading="lazy" width="308" height="407" alt="Карточка природного места Камчатки." srcset="img/png/photo-slide-card-1@2x.png">
+                        </picture>
                       </div>
                       <div class="slide-cards__img-small">
-                        <img src="img/png/photo-slide-card-2.png" width="277" height="366" alt="Девушка у горы Камчатки.">
+                        <picture>
+                          <source type="image/webp" srcset="img/png/photo-slide-card-2.webp 1x, img/png/photo-slide-card-2@2x.webp 2x">
+
+                          <img src="img/png/photo-slide-card-2.png" loading="lazy" width="277" height="366" alt="Девушка у горы Камчатки." srcset="img/png/photo-slide-card-2@2x.png">
+                        </picture>
                       </div>
                     </div>
                   </div>
@@ -203,7 +211,7 @@
           <div class="tours__clouds-bg">
             <picture>
               <source type="image/webp" srcset="img/png/clouds.webp 1x">
-              <img src="img/png/clouds.png" width="837" height="279" alt="Облака.">
+              <img src="img/png/clouds.png" loading="lazy" width="837" height="279" alt="Облака.">
             </picture>
           </div>
           <div class="container">
@@ -230,9 +238,9 @@
                     <div class="tour-card">
                       <div class="tour-card__bg-img">
                         <picture>
-                          <source type="image/webp" srcset="img/jpg/elbrus.webp 1x, img/jpg/elbrus@2x.webp 2x">
+                          <source type="image/webp" srcset="img/jpg/elbrus.webp 1x">
 
-                          <img src="img/jpg/elbrus.jpg" width="380" height="412" alt="Эльбрус под облаками." srcset="img/jpg/elbrus@2x.jpg">
+                          <img src="img/jpg/elbrus.jpg" width="380" height="412" alt="Эльбрус под облаками."">
                         </picture>
                       </div>
                       <div class="tour-card__row">
@@ -294,9 +302,9 @@
                     <div class="tour-card">
                       <div class="tour-card__bg-img">
                         <picture>
-                          <source type="image/webp" srcset="img/jpg/belukha-mountain.webp 1x, img/jpg/belukha-mountain@2x.webp 2x">
+                          <source type="image/webp" srcset="img/jpg/belukha-mountain.webp 1x">
 
-                          <img src="img/jpg/belukha-mountain.jpg" width="380" height="412" alt="Подножие Белухи." srcset="img/jpg/belukha-mountain@2x.jpg">
+                          <img src="img/jpg/belukha-mountain.jpg" width="380" height="412" alt="Подножие Белухи.">
                         </picture>
                       </div>
                       <div class="tour-card__row">
@@ -358,9 +366,9 @@
                     <div class="tour-card">
                       <div class="tour-card__bg-img">
                         <picture>
-                          <source type="image/webp" srcset="img/jpg/mount-fisht.webp 1x, img/jpg/mount-fisht@2x.webp 2x">
+                          <source type="image/webp" srcset="img/jpg/mount-fisht.webp 1x">
 
-                          <img src="img/jpg/mount-fisht.jpg" width="380" height="412" alt="Гора Фишт." srcset="img/jpg/mount-fisht@2x.jpg">
+                          <img src="img/jpg/mount-fisht.jpg" loading="lazy" width="380" height="412" alt="Гора Фишт.">
                         </picture>
                       </div>
                       <div class="tour-card__row">
@@ -422,9 +430,9 @@
                     <div class="tour-card">
                       <div class="tour-card__bg-img">
                         <picture>
-                          <source type="image/webp" srcset="img/jpg/elbrus.webp 1x, img/jpg/elbrus@2x.webp 2x">
+                          <source type="image/webp" srcset="img/jpg/elbrus.webp 1x">
 
-                          <img src="img/jpg/elbrus.jpg" width="380" height="412" alt="Эльбрус под облаками." srcset="img/jpg/elbrus@2x.jpg">
+                          <img src="img/jpg/elbrus.jpg" width="380" height="412" alt="Эльбрус под облаками.">
                         </picture>
                       </div>
                       <div class="tour-card__row">
@@ -486,9 +494,9 @@
                     <div class="tour-card">
                       <div class="tour-card__bg-img">
                         <picture>
-                          <source type="image/webp" srcset="img/jpg/belukha-mountain.webp 1x, img/jpg/belukha-mountain@2x.webp 2x">
+                          <source type="image/webp" srcset="img/jpg/belukha-mountain.webp 1x">
 
-                          <img src="img/jpg/belukha-mountain.jpg" width="380" height="412" alt="Подножие Белухи." srcset="img/jpg/belukha-mountain@2x.jpg">
+                          <img src="img/jpg/belukha-mountain.jpg" width="380" height="412" alt="Подножие Белухи.">
                         </picture>
                       </div>
                       <div class="tour-card__row">
@@ -550,9 +558,9 @@
                     <div class="tour-card">
                       <div class="tour-card__bg-img">
                         <picture>
-                          <source type="image/webp" srcset="img/jpg/mount-fisht.webp 1x, img/jpg/mount-fisht@2x.webp 2x">
+                          <source type="image/webp" srcset="img/jpg/mount-fisht.webp 1x">
 
-                          <img src="img/jpg/mount-fisht.jpg" width="380" height="412" alt="Гора Фишт." srcset="img/jpg/mount-fisht@2x.jpg">
+                          <img src="img/jpg/mount-fisht.jpg" width="380" height="412" alt="Гора Фишт.">
                         </picture>
                       </div>
                       <div class="tour-card__row">
@@ -630,7 +638,7 @@
           </div>
           <div class="training__slider swiper">
             <span class="visually-hidden">Слайдер карточек наших инструкторов.</span>
-            <h3 class="training__slider-title">Наши инструкторы</h3>
+            <h3>Наши инструкторы</h3>
             <div class="training__slider-buttons-wrap">
               <div class="training__slider-button-prev swiper-button-prev slider-button">
                 <span class="visually-hidden">Кнопка слайдера "назад".</span>
@@ -651,7 +659,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-alex.webp 1x, img/jpg/instructor-alex@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-alex.jpg" width="238" height="212" alt="Фото тренера Александр." srcset="img/jpg/instructor-alex@2x.jpg">
+                    <img src="img/jpg/instructor-alex.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Александр." srcset="img/jpg/instructor-alex@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Александр Прокофьев</h4>
@@ -669,7 +677,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-svetlana.webp 1x, img/jpg/instructor-svetlana@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-svetlana.jpg" width="238" height="212" alt="Фото тренера Светланы." srcset="img/jpg/instructor-svetlana@2x.jpg">
+                    <img src="img/jpg/instructor-svetlana.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Светланы." srcset="img/jpg/instructor-svetlana@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Светлана  Афиногенова</h4>
@@ -687,7 +695,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-nadezhda.webp 1x, img/jpg/instructor-nadezhda@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-nadezhda.jpg" width="238" height="212" alt="Фото тренера Надежды." srcset="img/jpg/instructor-nadezhda@2x.jpg">
+                    <img src="img/jpg/instructor-nadezhda.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Надежды." srcset="img/jpg/instructor-nadezhda@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Надежда Колесниченко</h4>
@@ -705,7 +713,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-fedor.webp 1x, img/jpg/instructor-fedor@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-fedor.jpg" width="238" height="212" alt="Фото тренера Фёдора." srcset="img/jpg/instructor-fedor@2x.jpg">
+                    <img src="img/jpg/instructor-fedor.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Фёдора." srcset="img/jpg/instructor-fedor@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Федор Кайгородов</h4>
@@ -723,7 +731,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-alex.webp 1x, img/jpg/instructor-alex@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-alex.jpg" width="238" height="212" alt="Фото тренера Александр." srcset="img/jpg/instructor-alex@2x.jpg">
+                    <img src="img/jpg/instructor-alex.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Александр." srcset="img/jpg/instructor-alex@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Александр Прокофьев</h4>
@@ -741,7 +749,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-svetlana.webp 1x, img/jpg/instructor-svetlana@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-svetlana.jpg" width="238" height="212" alt="Фото тренера Светланы." srcset="img/jpg/instructor-svetlana@2x.jpg">
+                    <img src="img/jpg/instructor-svetlana.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Светланы." srcset="img/jpg/instructor-svetlana@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Светлана  Афиногенова</h4>
@@ -759,7 +767,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-nadezhda.webp 1x, img/jpg/instructor-nadezhda@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-nadezhda.jpg" width="238" height="212" alt="Фото тренера Надежды." srcset="img/jpg/instructor-nadezhda@2x.jpg">
+                    <img src="img/jpg/instructor-nadezhda.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Надежды." srcset="img/jpg/instructor-nadezhda@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Надежда Колесниченко</h4>
@@ -777,7 +785,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/instructor-fedor.webp 1x, img/jpg/instructor-fedor@2x.webp 2x">
 
-                    <img src="img/jpg/instructor-fedor.jpg" width="238" height="212" alt="Фото тренера Фёдора." srcset="img/jpg/instructor-fedor@2x.jpg">
+                    <img src="img/jpg/instructor-fedor.jpg" loading="lazy" width="238" height="212" alt="Фото тренера Фёдора." srcset="img/jpg/instructor-fedor@2x.jpg">
                   </picture>
                   <div class="trainer-card__row">
                     <h4>Федор Кайгородов</h4>
@@ -829,14 +837,14 @@
             <picture>
               <source type="image/webp" srcset="img/png/clouds-2.webp 1x">
 
-              <img src="img/png/clouds-2.png" width="840" height="280" alt="Облака.">
+              <img src="img/png/clouds-2.png" loading="lazy" width="618" height="280" alt="Облака.">
             </picture>
           </div>
           <div class="about__img-wrap">
             <picture>
-              <source type="image/webp" srcset="img/png/people-in-hike.webp 1x, img/png/people-in-hike@2x.webp 2x">
+              <source type="image/webp" srcset="img/png/people-in-hike.webp 1x">
 
-              <img src="img/png/people-in-hike.png" width="808" height="474" alt="Группа путешественников в горах." srcset="img/png/people-in-hike@2x.png">
+              <img src="img/png/people-in-hike.png" width="808" height="474" alt="Группа путешественников в горах.">
             </picture>
           </div>
           <div class="about__text-wrap">
@@ -876,11 +884,11 @@
                       <source type="image/webp" srcset="img/jpg/reviewer-alex.webp 1x, img/jpg/reviewer-alex@2x.webp 2x">
 
                       <source media="(max-width: 767px)" srcset="img/jpg/reviewer-alex-mobile.jpg 1x, img/jpg/reviewer-alex-mobile@2x.jpg 2x">
-                      <img src="img/jpg/reviewer-alex.jpg" width="258" height="253" alt="Фото сидящего Фролова Александра на фоне горы и голубго неба." srcset="img/jpg/reviewer-alex@2x">
+                      <img src="img/jpg/reviewer-alex.jpg" loading="lazy" width="258" height="253" alt="Фото сидящего Фролова Александра на фоне горы и голубго неба." srcset="img/jpg/reviewer-alex@2x">
                     </picture>
                     <div class="review-card__text-wrap">
                       <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с друзьями. Впечатления потрясающие! Инструкторы&nbsp;– настоящие эксперты&nbsp;– всему научили, все показали. Делились увлекательными историями о&nbsp;местах, людях, культуре места.</p>
-                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на до этого&nbsp;и&nbsp;после. Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на до этого и после. Еще никогда не отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
                       <div class="review-card__caption">
                         <b class="review-card__name">Фролов Александр</b>
                         <span class="review-card__info">38 лет, Москва</span>
@@ -895,7 +903,7 @@
                       <source type="image/webp" srcset="img/jpg/reviewer-ivan.webp 1x, img/jpg/reviewer-ivan@2x.webp 2x">
 
                       <source media="(max-width: 767px)" srcset="img/jpg/reviewer-ivan-mobile.jpg 1x, img/jpg/reviewer-ivan-mobile@2x.jpg 2x">
-                      <img src="img/jpg/reviewer-ivan.jpg" width="258" height="253" alt="Фото стоящего Ивана Соловьева на вершие горы." srcset="img/jpg/reviewer-ivan@2x">
+                      <img src="img/jpg/reviewer-ivan.jpg" loading="lazy" width="258" height="253" alt="Фото стоящего Ивана Соловьева на вершие горы." srcset="img/jpg/reviewer-ivan@2x">
                     </picture>
                     <div class="review-card__text-wrap">
                       <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идет по&nbsp;лыжне, далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца 19&nbsp;века. Было очень интересно!</p>
@@ -914,7 +922,7 @@
                       <source type="image/webp" srcset="img/jpg/reviewer-evgeniya.webp 1x, img/jpg/reviewer-evgeniya@2x.webp 2x">
 
                       <source media="(max-width: 767px)" srcset="img/jpg/reviewer-evgeniya-mobile.jpg 1x, img/jpg/reviewer-evgeniya-mobile@2x.jpg 2x">
-                      <img src="img/jpg/reviewer-evgeniya.jpg" width="258" height="253" alt="Фото стоящего Евгении Баженовой с рюкзаком на спине и картой в руках." srcset="img/jpg/reviewer-evgeniya@2x">
+                      <img src="img/jpg/reviewer-evgeniya.jpg" loading="lazy" width="258" height="253" alt="Фото стоящего Евгении Баженовой с рюкзаком на спине и картой в руках." srcset="img/jpg/reviewer-evgeniya@2x">
                     </picture>
                     <div class="review-card__text-wrap">
                       <p>Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена, пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем ожидала, видимо организм уже привык.</p>
@@ -933,7 +941,7 @@
                       <source type="image/webp" srcset="img/jpg/reviewer-elena.webp 1x, img/jpg/reviewer-elena@2x.webp 2x">
 
                       <source media="(max-width: 767px)" srcset="img/jpg/reviewer-elena-mobile.jpg 1x, img/jpg/reviewer-elena-mobile@2x.jpg 2x">
-                      <img src="img/jpg/reviewer-elena.jpg" width="258" height="253" alt="Фото стоящего Елена Пирогова в защитных очках." srcset="img/jpg/reviewer-elena@2x">
+                      <img src="img/jpg/reviewer-elena.jpg" loading="lazy" width="258" height="253" alt="Фото стоящего Елена Пирогова в защитных очках." srcset="img/jpg/reviewer-elena@2x">
                     </picture>
                     <div class="review-card__text-wrap">
                       <p>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия, взбираешься на&nbsp;вершину.</p>
@@ -954,14 +962,14 @@
             <picture>
               <source type="image/webp" srcset="img/png/clouds.webp 1x">
 
-              <img src="img/png/clouds.png" width="837" height="279" alt="Облака.">
+              <img src="img/png/clouds.png" loading="lazy" width="837" height="279" alt="Облака.">
             </picture>
           </div>
           <div class="features__bg-clouds features__bg-clouds--two">
             <picture>
               <source type="image/webp" srcset="img/png/clouds-2.webp 1x">
 
-              <img src="img/png/clouds-2.png" width="840" height="280" alt="Облака.">
+              <img src="img/png/clouds-2.png" loading="lazy" width="618" height="280" alt="Облака.">
             </picture>
           </div>
           <div class="features__container">
@@ -989,7 +997,7 @@
                     </svg>
                   </span>
                   <h3>Экспертиза и знания</h3>
-                  <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
+                  <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и могут в полной мере насладиться опытом без опасений.</p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -1000,7 +1008,7 @@
                     </svg>
                   </span>
                   <h3>Оборудование и снаряжение</h3>
-                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от&nbsp;необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от&nbsp;необходимости покупать, брать с собой снаряжение, что&nbsp;делает путешествие более удобным и&nbsp;экономически выгодным.</p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -1069,7 +1077,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-1.webp 1x, img/jpg/gallery/gallery-photo-1@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-1.jpg" width="275" height="449" alt="Парень с рюкзаком на фоне гор." srcset="img/jpg/gallery/gallery-photo-1@2x.jpg">
+                    <img src="img/jpg/gallery/gallery-photo-1.jpg" loading="lazy" width="275" height="449" alt="Парень с рюкзаком на фоне гор." srcset="img/jpg/gallery/gallery-photo-1@2x.jpg">
                   </picture>
                 </div>
               </div>
@@ -1079,13 +1087,13 @@
                     <picture>
                       <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-2.webp 1x, img/jpg/gallery/gallery-photo-2@2x.webp 2x">
 
-                      <img src="img/jpg/gallery/gallery-photo-2.jpg" width="298" height="179" alt="Люди у костра в темное." srcset="img/jpg/gallery/gallery-photo-2@2x.jpg">
+                      <img src="img/jpg/gallery/gallery-photo-2.jpg" loading="lazy" width="298" height="179" alt="Люди у костра в темное." srcset="img/jpg/gallery/gallery-photo-2@2x.jpg">
                     </picture>
                   </div>
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-3.webp 1x, img/jpg/gallery/gallery-photo-3@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-3.jpg" width="298" height="265" alt="Компас в руке." srcset="img/jpg/gallery/gallery-photo-3@2x.jpg">
+                    <img src="img/jpg/gallery/gallery-photo-3.jpg" loading="lazy" width="298" height="265" alt="Компас в руке." srcset="img/jpg/gallery/gallery-photo-3@2x.jpg">
                   </picture>
                 </div>
               </div>
@@ -1094,7 +1102,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-4.webp 1x, img/jpg/gallery/gallery-photo-4@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-4.jpg" width="272" height="449" alt="Люди с канатом в горах." srcset="img/jpg/gallery/gallery-photo-4@2x.jpg">
+                    <img src="img/jpg/gallery/gallery-photo-4.jpg" loading="lazy" width="272" height="449" alt="Люди с канатом в горах." srcset="img/jpg/gallery/gallery-photo-4@2x.jpg">
                   </picture>
                 </div>
               </div>
@@ -1104,13 +1112,13 @@
                     <picture>
                       <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-5.webp 1x, img/jpg/gallery/gallery-photo-5@2x.webp 2x">
 
-                      <img src="img/jpg/gallery/gallery-photo-5.jpg" width="298" height="179" alt="Люди и снег в горах." srcset="img/jpg/gallery/gallery-photo-5@2x.jpg">
+                      <img src="img/jpg/gallery/gallery-photo-5.jpg" loading="lazy" width="298" height="179" alt="Люди и снег в горах." srcset="img/jpg/gallery/gallery-photo-5@2x.jpg">
                     </picture>
                   </div>
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-6.webp 1x, img/jpg/gallery/gallery-photo-6@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-6.jpg" width="298" height="265" alt="Звёздное небо над палаткой." srcset="img/jpg/gallery/gallery-photo-6@2x.jpg">
+                    <img src="img/jpg/gallery/gallery-photo-6.jpg" loading="lazy" width="298" height="265" alt="Звёздное небо над палаткой." srcset="img/jpg/gallery/gallery-photo-6@2x.jpg">
                   </picture>
                 </div>
               </div>
@@ -1119,7 +1127,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-7.webp 1x, img/jpg/gallery/gallery-photo-7@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-7.jpg" width="272" height="449" alt="Два парня у реки и костра." srcset="img/jpg/gallery/gallery-photo-7@2x.jpg">
+                    <img src="img/jpg/gallery/gallery-photo-7.jpg" loading="lazy" width="272" height="449" alt="Два парня у реки и костра." srcset="img/jpg/gallery/gallery-photo-7@2x.jpg">
                   </picture>
                 </div>
               </div>
@@ -1128,7 +1136,7 @@
                   <picture>
                     <source type="image/webp" srcset="img/jpg/gallery/gallery-photo-7.webp 1x, img/jpg/gallery/gallery-photo-7@2x.webp 2x">
 
-                    <img src="img/jpg/gallery/gallery-photo-7.jpg" width="272" height="449" alt="Два парня у реки и костра." srcset="img/jpg/gallery/gallery-photo-7@2x.jpg">
+                    <img src="img/jpg/gallery/gallery-photo-7.jpg" loading="lazy" width="272" height="449" alt="Два парня у реки и костра." srcset="img/jpg/gallery/gallery-photo-7@2x.jpg">
                   </picture>
                 </div>
               </div>
@@ -1142,7 +1150,7 @@
               <source type="image/webp" srcset="img/jpg/trees-and-clouds.webp 1x, img/jpg/trees-and-clouds@2x.webp 2x">
 
               <source media="(max-width: 1199px)" srcset="img/jpg/trees-and-clouds-tablet.jpg 1x, img/jpg/trees-and-clouds-tablet@2x.jpg 2x">
-              <img src="img/jpg/trees-and-clouds.jpg" width="1440" height="800" alt="Деревья и облака." srcset="img/jpg/trees-and-clouds@2x.jpg">
+              <img src="img/jpg/trees-and-clouds.jpg" loading="lazy" width="1440" height="800" alt="Деревья и облака." srcset="img/jpg/trees-and-clouds@2x.jpg">
             </picture>
           </div>
           <div class="feedback__container">
@@ -1198,7 +1206,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/png/map.webp 1x, img/png/map@2x.webp 2x">
 
-                  <img src="img/png/map.png" width="585" height="324" alt="Картинка карты нашего центра." srcset="img/png/map@2x.png">
+                  <img src="img/png/map.png" loading="lazy" width="585" height="324" alt="Картинка карты нашего центра." srcset="img/png/map@2x.png">
                 </picture>
               </div>
             </div>
@@ -1226,7 +1234,7 @@
                   <a href="#" class="site-list__link">О нас</a>
                 </li>
               </ul>
-              <ul class="main-nav__list main-footer__list site-list site-list--footer">
+              <ul class="main-footer__list site-list site-list--footer">
                 <li class="site-list__item">
                   <a href="#" class="site-list__link">Отзывы</a>
                 </li>

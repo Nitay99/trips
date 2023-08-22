@@ -1,12 +1,11 @@
 .site-list {
   padding-left: 0;
-  margin-top: 0;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 22px;
   width: 589px;
+  max-width: 680px;
 
   user-select: none;
   list-style-type: none;
@@ -67,7 +66,7 @@
   position: relative;
   z-index: 3;
   display: inline-flex;
-  max-width: 130px;
+  max-width: 195px;
   border-bottom: 1px solid $color-transparent;
 
   color: inherit;

@@ -27,9 +27,9 @@
 
 .tours__clouds-bg {
   position: absolute;
-  width: 837px;
-  bottom: -99px;
-  left: -231px;
+  width: 400px;
+  bottom: -36px;
+  left: -31px;
 
   @include vp-1199 {
     display: none;
@@ -37,8 +37,8 @@
 }
 
 .tours__clouds-bg img {
-  object-fit: contain;
-  height: 361px;
+  object-fit: cover;
+  height: 269px;
 }
 
 .tours__container {
@@ -70,6 +70,10 @@
   }
 }
 
+.tours__slider .swiper-slide {
+  height: auto;
+}
+
 .tours__slider-buttons-wrap {
   user-select: none;
   position: absolute;
@@ -99,8 +103,9 @@
   text-transform: uppercase;
   letter-spacing: 0.7px;
 
+  max-width: 250px;
   position: relative;
-  padding-right: 24px;
+  padding-right: 22px;
 
   @include hover-focus {
     &:not(.tours__link--disabled) {
