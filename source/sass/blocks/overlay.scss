@@ -8,7 +8,7 @@
   background-color: transparentize($color-black, 0.5);
 }
 
-html {
+body {
   @include vp-1199 {
     &:has(.main-nav--opened) {
       overflow-y: hidden;

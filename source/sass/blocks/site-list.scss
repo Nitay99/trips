@@ -17,8 +17,9 @@
     gap: 11px;
 
     &--dropdown-menu {
-      max-height: 100vh;
       overflow-y: scroll;
+      max-height: 350px;
+      flex-wrap: nowrap;
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
