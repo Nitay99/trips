@@ -6,11 +6,7 @@
   @include vp-1199 {
     display: flex;
     justify-content: center;
-    width: 65%;
-    height: auto;
-  }
-
-  @include only-768 {
+    width: 442px;
     height: 300px;
   }
 

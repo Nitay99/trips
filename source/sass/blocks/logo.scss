@@ -1,5 +1,8 @@
 .logo {
   display: flex;
+  z-index: 5;
+  width: 205px;
+  height: 62px;
   border-bottom: 1px solid $color-transparent;
 
   color: inherit;
@@ -16,11 +19,29 @@
   @include active {
     outline: none;
   }
+
+  @include vp-1199 {
+    width: 144px;
+    height: 44px;
+  }
+
+  @include vp-767 {
+    width: 112px;
+    height: 34px;
+  }
 }
 
 .logo--footer {
   @include vp-1199 {
-    padding-top: 10px;
+    width: 118px;
+    height: 34px;
+    margin-top: 10px;
+  }
+
+  @include vp-767 {
+    width: 112px;
+    height: 34px;
+    margin-left: 4px;
   }
 }
 

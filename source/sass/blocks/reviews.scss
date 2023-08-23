@@ -50,7 +50,12 @@
 }
 
 .reviews__slider .swiper-slide {
+  width: 790px;
   height: auto;
+
+  @include vp-1199 {
+    width: 100%;
+  }
 }
 
 .reviews__slider-buttons-wrap {

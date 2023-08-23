@@ -29,7 +29,7 @@ const initReviewSlider = () => {
         allowTouchMove: true,
       },
       1200: {
-        slidesPerView: 1.625,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         allowTouchMove: false,
       },

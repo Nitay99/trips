@@ -3,23 +3,43 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1em;
+  border-bottom: 1px solid $color-transparent;
 
-  max-width: 145px;
+  min-width: 142px;
+  max-width: 160px;
 
-  @include hover {
-    border-bottom: 1px solid;
+  @include hover-focus {
+    &:not(.contact-phone--disabled) {
+      color: $color-resolution-blue;
+      outline: none;
+    }
   }
 
-  @include focus {
-    outline: 1px solid;
-    border-bottom: 0;
+  @include active {
+    &:not(.contact-phone--disabled) {
+      color: $color-additional;
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+    opacity: 0.1;
+    color: $color-additional;
   }
 
   @include vp-1199 {
+    min-width: 126px;
+
     font-size: 16px;
   }
 
   @include vp-767 {
+    min-width: 110px;
+
     font-size: 14px;
   }
+}
+
+.contact-phone--white.contact-phone--disabled {
+  color: $color-default-white;
 }

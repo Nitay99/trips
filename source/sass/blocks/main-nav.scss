@@ -132,6 +132,9 @@
 }
 
 .main-nav__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 22px;
   align-self: flex-start;
 

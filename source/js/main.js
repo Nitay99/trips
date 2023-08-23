@@ -10,6 +10,7 @@ import {initReviewSlider} from './modules/sliders/review-slider';
 import './modules/sliders/feature-slider';
 import {initGallerySlider} from './modules/sliders/gallery-slider';
 import {initMap} from './modules/map';
+import './modules/nav-link';
 
 // ---------------------------------
 

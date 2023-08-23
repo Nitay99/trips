@@ -17,17 +17,19 @@
     gap: 11px;
 
     &--dropdown-menu {
+      max-height: 100vh;
+      overflow-y: scroll;
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
-      padding-top: 43px;
-      padding-right: 40px;
+      padding-top: 44px;
+      padding-right: calc(6% - 5px);
       padding-bottom: 64px;
-      padding-left: 40px;
+      padding-left: calc(6% - 5px);
       width: 100%;
       max-width: 100%;
       position: absolute;
-      top: 74px;
+      top: 73px;
       left: 0;
 
       background-color: $color-default-white;
@@ -42,6 +44,8 @@
 
     &--dropdown-menu {
       padding-bottom: 43px;
+      padding-right: calc(5% - 5px);
+      padding-left: calc(5% - 5px);
       top: 47px;
       gap: 6px;
     }
@@ -66,7 +70,7 @@
   position: relative;
   z-index: 3;
   display: inline-flex;
-  max-width: 195px;
+  max-width: 220px;
   border-bottom: 1px solid $color-transparent;
 
   color: inherit;
