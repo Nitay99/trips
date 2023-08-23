@@ -4581,17 +4581,18 @@ button,
 
 .training-list__item svg {
   position: absolute;
-  top: 11.5px;
+  top: auto;
+  bottom: 12px;
   left: 0;
 }
 @media (max-width: 1199px) {
   .training-list__item svg {
-    top: 8px;
+    bottom: 11px;
   }
 }
 @media (max-width: 767px) {
   .training-list__item svg {
-    top: 4px;
+    bottom: 7px;
     width: 18px;
   }
 }

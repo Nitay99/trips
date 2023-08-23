@@ -130,15 +130,16 @@
 
 .training-list__item svg {
   position: absolute;
-  top: 11.5px;
+  top: auto;
+  bottom: 12px;
   left: 0;
 
   @include vp-1199 {
-    top: 8px;
+    bottom: 11px;
   }
 
   @include vp-767 {
-    top: 4px;
+    bottom: 7px;
     width: 18px;
   }
 }
