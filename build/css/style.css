@@ -3424,7 +3424,7 @@ button,
   }
   .site-list--dropdown-menu {
     overflow-y: scroll;
-    max-height: 350px;
+    max-height: 80vh;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-orient: vertical;
